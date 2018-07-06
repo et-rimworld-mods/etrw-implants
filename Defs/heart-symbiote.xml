@@ -18,6 +18,10 @@
         <thingSetMakerTags>
             <li>RewardSpecial</li>
         </thingSetMakerTags>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+
         <techLevel>Spacer</techLevel>
         <techHediffsTags>
             <li>SpacerMilitary</li>
