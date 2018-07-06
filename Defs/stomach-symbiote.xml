@@ -3,7 +3,7 @@
     <ThingDef ParentName="ImplantBase">
         <defName>StomachSymbiote</defName>
         <label>stomach symbiote</label>
-        <description>Stomach symbiote, designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.</description>
+        <description>The stomach symbiote was designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.</description>
 
         <graphicData>
             <texPath>Things/Item/Health/HealthItemBionic</texPath>
@@ -44,7 +44,7 @@
         <stages>
             <li>
                 <label>stomach symbiote</label>
-                <description>This thing is keeping you alive, but it disrupts your natural hormones, putting you in a bad mood. Sometimes you can feel it wriggling around down there.</description>
+                <description>This thing is keeping me alive, but it disrupts my natural hormones, putting you in a bad mood. Sometimes I can feel it wriggling around down there.</description>
                 <baseMoodEffect>-5</baseMoodEffect>
             </li>
         </stages>
