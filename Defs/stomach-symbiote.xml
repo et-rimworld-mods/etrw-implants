@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ImplantBase">
+        <defName>StomachSymbiote</defName>
+        <label>stomach symbiote</label>
+        <description>Stomach symbiote, designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.</description>
+
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItemBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>0.2</Mass>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+        <techLevel>Spacer</techLevel>
+        <techHediffsTags>
+            <li>SpacerMilitary</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>StomachSymbiote</defName>
+        <label>stomach symbiote</label>
+        <labelNoun>a stomach symbiote</labelNoun>
+        <stages>
+            <li>
+                <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>StomachSymbiote</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>StomachSymbiote</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>stomach symbiote</label>
+                <description>This thing is keeping you alive, but it disrupts your natural hormones, putting you in a bad mood. Sometimes you can feel it wriggling around down there.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallStomachSymbiote</defName>
+        <label>install stomach symbiote</label>
+        <description>Install a stomach symbiote.</description>
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <jobString>Installing stomach symbiote.</jobString>
+
+        <!--Just stick it down their throat. Ick!-->
+        <workAmount>500</workAmount>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>StomachSymbiote</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>StomachSymbiote</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Stomach</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>StomachSymbiote</addsHediff>
+    </RecipeDef>
+</Defs>
