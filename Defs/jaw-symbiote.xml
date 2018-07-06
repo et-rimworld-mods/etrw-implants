@@ -24,7 +24,7 @@
         </techHediffsTags>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="AddedBodyPartBase">
         <defName>JawSymbioteHediff</defName>
         <label>jaw symbiote</label>
         <labelNoun>a jaw symbiote</labelNoun>
