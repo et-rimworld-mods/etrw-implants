@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ImplantBase">
+        <defName>HeartSymbiote</defName>
+        <label>heart symbiote</label>
+        <description>An advanced, genetically-engineered symbiote, designed for the military. Useful for its increased soldier function, it also causes increased hunger and negatively affects the soldier's mood.</description>
+
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItemBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>0.2</Mass>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
+        <techLevel>Spacer</techLevel>
+        <techHediffsTags>
+            <li>SpacerMilitary</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <HediffDef ParentName="AddedBodyPartBase"> <!--This has to be "AddedBodyPartBase" otherwise body part efficiency doesn't work. :C-->
+        <defName>HeartSymbioteHediff</defName>
+        <label>heart symbiote</label>
+        <labelNoun>a heart symbiote</labelNoun>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.6</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <hungerRateFactorOffset>0.8</hungerRateFactorOffset>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>HeartSymbiote</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>HeartSymbioteThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>HeartSymbioteHediff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>heart symbiote</label>
+                <description>I feel jacked-up all the time.</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallHeartSymbiote</defName>
+        <label>install heart symbiote</label>
+        <description>Install a heart symbiote.</description>
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <jobString>Installing heart symbiote.</jobString>
+
+        <!--Just stick it down their throat. Ick!-->
+        <workAmount>500</workAmount>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HeartSymbiote</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>HeartSymbiote</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>HeartSymbioteHediff</addsHediff>
+    </RecipeDef>
+</Defs>
