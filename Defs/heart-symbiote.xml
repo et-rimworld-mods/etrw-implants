@@ -22,6 +22,9 @@
         <techHediffsTags>
             <li>SpacerMilitary</li>
         </techHediffsTags>
+        <thingSetMakerTags>
+            <li>RewardSpecial</li>
+        </thingSetMakerTags>
     </ThingDef>
 
     <HediffDef ParentName="ImplantHediffBase">
