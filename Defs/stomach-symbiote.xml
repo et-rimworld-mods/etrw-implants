@@ -25,7 +25,7 @@
     </ThingDef>
 
     <HediffDef ParentName="ImplantHediffBase">
-        <defName>StomachSymbiote</defName>
+        <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
         <stages>
@@ -37,9 +37,9 @@
     </HediffDef>
 
     <ThoughtDef>
-        <defName>StomachSymbiote</defName>
+        <defName>StomachSymbioteThought</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>StomachSymbiote</hediff>
+        <hediff>StomachSymbioteHediff</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>
@@ -79,6 +79,6 @@
         <appliedOnFixedBodyParts>
             <li>Stomach</li>
         </appliedOnFixedBodyParts>
-        <addsHediff>StomachSymbiote</addsHediff>
+        <addsHediff>StomachSymbioteHediff</addsHediff>
     </RecipeDef>
 </Defs>

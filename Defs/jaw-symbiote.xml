@@ -25,7 +25,7 @@
     </ThingDef>
 
     <HediffDef ParentName="ImplantHediffBase">
-        <defName>JawSymbiote</defName>
+        <defName>JawSymbioteHediff</defName>
         <label>jaw symbiote</label>
         <labelNoun>a jaw symbiote</labelNoun>
         <addedPartProps>
@@ -36,9 +36,9 @@
     </HediffDef>
 
     <ThoughtDef>
-        <defName>JawSymbiote</defName>
+        <defName>JawSymbioteThought</defName>
         <workerClass>ThoughtWorker_Hediff</workerClass>
-        <hediff>JawSymbiote</hediff>
+        <hediff>JawSymbioteHediff</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>
@@ -78,6 +78,6 @@
         <appliedOnFixedBodyParts>
             <li>Jaw</li>
         </appliedOnFixedBodyParts>
-        <addsHediff>JawSymbiote</addsHediff>
+        <addsHediff>JawSymbioteHediff</addsHediff>
     </RecipeDef>
 </Defs>
