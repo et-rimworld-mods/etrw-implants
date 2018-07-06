@@ -4,7 +4,6 @@
         <xpath>/Defs/ThingDef["defName=Human"]/recipes</xpath>
         <value>
             <li>InstallStomachSymbiote</li>
-            <li>InstallJawSymbiote</li>
         </value>
     </Operation>
 </Patch>
