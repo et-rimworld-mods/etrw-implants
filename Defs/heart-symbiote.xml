@@ -24,17 +24,19 @@
         </techHediffsTags>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase"> <!--This has to be "AddedBodyPartBase" otherwise body part efficiency doesn't work. :C-->
+    <HediffDef ParentName="ImplantHediffBase">
         <defName>HeartSymbioteHediff</defName>
         <label>heart symbiote</label>
         <labelNoun>a heart symbiote</labelNoun>
-        <addedPartProps>
-            <solid>true</solid>
-            <partEfficiency>1.6</partEfficiency>
-        </addedPartProps>
         <stages>
             <li>
                 <hungerRateFactorOffset>0.8</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                </capMods>
             </li>
         </stages>
         <spawnThingOnRemoved>HeartSymbiote</spawnThingOnRemoved>
@@ -61,8 +63,8 @@
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing heart symbiote.</jobString>
 
-        <!--Just stick it down their throat. Ick!-->
-        <workAmount>500</workAmount>
+        <!--Just stick it down their throat and wait. Ick!-->
+        <workAmount>5000</workAmount>
         <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
         <ingredients>
