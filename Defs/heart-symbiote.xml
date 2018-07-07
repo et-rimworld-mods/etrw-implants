@@ -34,7 +34,7 @@
         <labelNoun>a heart symbiote</labelNoun>
         <stages>
             <li>
-                <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+                <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
                 <painFactor>0.9</painFactor>
                 <capMods>
                     <li>
@@ -67,7 +67,7 @@
         <stages>
             <li>
                 <label>heart symbiote</label>
-                <description>I feel jacked-up all the time. I'm the bullet in the air, and I don't know how much longer I stay like this.</description>
+                <description>I feel jacked-up all the time, and I don't know how much longer I stay like this.</description>
                 <baseMoodEffect>-7</baseMoodEffect>
             </li>
         </stages>
