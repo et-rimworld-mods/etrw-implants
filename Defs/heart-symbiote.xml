@@ -67,8 +67,8 @@
         <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing heart symbiote.</jobString>
 
-        <!--Just stick it down their throat and wait. Ick!-->
-        <workAmount>5000</workAmount>
+        <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
+        <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
         <ingredients>
