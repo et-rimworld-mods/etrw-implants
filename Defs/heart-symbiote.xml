@@ -34,7 +34,7 @@
         <labelNoun>a heart symbiote</labelNoun>
         <stages>
             <li>
-                <hungerRateFactorOffset>0.8</hungerRateFactorOffset>
+                <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
                 <capMods>
                     <li>
                         <capacity>BloodPumping</capacity>
