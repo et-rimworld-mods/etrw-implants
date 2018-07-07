@@ -87,7 +87,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>Eye</li>
+            <li>Heart</li>
         </appliedOnFixedBodyParts>
         <addsHediff>HeartSymbioteHediff</addsHediff>
     </RecipeDef>
