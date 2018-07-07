@@ -48,7 +48,7 @@
         <stages>
             <li>
                 <label>stomach symbiote</label>
-                <description>This thing is keeping me alive, but it disrupts my natural hormones, putting you in a bad mood. Sometimes I can feel it wriggling around down there.</description>
+                <description>This thing is keeping me alive, but it disrupts my natural hormones, putting me in a bad mood. Sometimes I can feel it wriggling around down there.</description>
                 <baseMoodEffect>-5</baseMoodEffect>
             </li>
         </stages>
