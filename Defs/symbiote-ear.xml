@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SymbioteBase">
+        <defName>EarSymbiote</defName>
+        <label>ear symbiote</label>
+        <description>A small yellow fish, once inserted into the ear (or closest similar body part), this symbiotic animal allows you to more readily understand other people, and thus also be understood. How it functions is complete fiction. It's best not to think about it too much.</description>
+
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <Mass>0.1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>EarSymbioteHediff</defName>
+        <label>ear symbiote</label>
+        <labelNoun>an ear symbiote</labelNoun>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>EarSymbiote</spawnThingOnRemoved>
+    </HediffDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallEarSymbiote</defName>
+        <label>install ear symbiote</label>
+        <description>Install an ear symbiote.</description>
+        <jobString>Installing ear symbiote.</jobString>
+
+        <!--Just stick it in their ear. Ick!-->
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>100</workAmount>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EarSymbiote</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EarSymbiote</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>EarSymbioteHediff</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveEarSymbiote</defName>
+        <label>remove ear symbiote</label>
+        <description>Remove an ear symbiote.</description>
+        <jobString>Removing ear symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s ear symbiote.</successfullyRemovedHediffMessage>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workAmount>1000</workAmount>
+        <removesHediff>EarSymbioteHediff</removesHediff>
+        <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+</Defs>

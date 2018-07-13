@@ -8,6 +8,9 @@
 
             <li>InstallHeartSymbiote</li>
             <li>RemoveHeartSymbiote</li>
+
+            <li>InstallEarSymbiote</li>
+            <li>RemoveEarSymbiote</li>
         </value>
     </Operation>
 </Patch>
