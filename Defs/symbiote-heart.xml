@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ImplantBase">
+    <ThingDef ParentName="SymbioteBase">
         <defName>HeartSymbiote</defName>
         <label>heart symbiote</label>
         <description>An advanced, genetically-engineered symbiote, designed for the military. Useful for its increased soldier function, it also causes increased hunger and negatively affects the soldier's mood.</description>
-
-        <graphicData>
-            <texPath>Things/Item/Health/HealthItemBionic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.80</drawSize>
-        </graphicData>
 
         <statBases>
             <MarketValue>2000</MarketValue>
             <Mass>0.2</Mass>
         </statBases>
-        <thingSetMakerTags>
-            <li>RewardSpecial</li>
-        </thingSetMakerTags>
-        <tradeTags>
-            <li>ExoticMisc</li>
-        </tradeTags>
-
-        <techLevel>Spacer</techLevel>
-        <techHediffsTags>
-            <li>SpacerMilitary</li>
-        </techHediffsTags>
     </ThingDef>
 
     <HediffDef ParentName="ImplantHediffBase">
@@ -110,11 +93,11 @@
         <label>remove heart symbiote</label>
         <description>Remove a heart symbiote.</description>
         <jobString>Removing heart symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
         <workAmount>6000</workAmount>
         <removesHediff>HeartSymbioteHediff</removesHediff>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart symbiote.</successfullyRemovedHediffMessage>
         <surgerySuccessChanceFactor>0.5</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.7</deathOnFailedSurgeryChance>
         <skillRequirements>

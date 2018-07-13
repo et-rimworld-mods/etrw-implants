@@ -1,31 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ImplantBase">
+    <ThingDef ParentName="SymbioteBase">
         <defName>StomachSymbiote</defName>
         <label>stomach symbiote</label>
         <description>The stomach symbiote was designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.</description>
-
-        <graphicData>
-            <texPath>Things/Item/Health/HealthItemBionic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.80</drawSize>
-        </graphicData>
 
         <statBases>
             <MarketValue>800</MarketValue>
             <Mass>0.2</Mass>
         </statBases>
-        <thingSetMakerTags>
-            <li>RewardSpecial</li>
-        </thingSetMakerTags>
-        <tradeTags>
-            <li>ExoticMisc</li>
-        </tradeTags>
-
-        <techLevel>Spacer</techLevel>
-        <techHediffsTags>
-            <li>SpacerMilitary</li>
-        </techHediffsTags>
     </ThingDef>
 
     <HediffDef ParentName="AddedBodyPartBase">
@@ -37,9 +20,6 @@
                 <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
             </li>
         </stages>
-        <addedPartProps>
-            <solid>true</solid>
-        </addedPartProps>
         <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
@@ -94,15 +74,15 @@
         <label>remove stomach symbiote</label>
         <description>Remove a stomach symbiote.</description>
         <jobString>Removing stomach symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s stomach symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
         <workAmount>3000</workAmount>
         <removesHediff>StomachSymbioteHediff</removesHediff>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s stomach symbiote.</successfullyRemovedHediffMessage>
         <surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
         <skillRequirements>
-            <Medicine>3</Medicine>
+            <Medicine>8</Medicine>
         </skillRequirements>
         <ingredients>
             <li>
