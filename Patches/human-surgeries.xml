@@ -4,7 +4,10 @@
         <xpath>/Defs/ThingDef["defName=Human" and @ParentName="BasePawn"]/recipes</xpath>
         <value>
             <li>InstallStomachSymbiote</li>
+            <li>RemoveStomachSymbiote</li>
+
             <li>InstallHeartSymbiote</li>
+            <li>RemoveHeartSymbiote</li>
         </value>
     </Operation>
 </Patch>

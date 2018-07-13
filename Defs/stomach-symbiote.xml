@@ -28,7 +28,7 @@
         </techHediffsTags>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="AddedBodyPartBase">
         <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
@@ -37,6 +37,9 @@
                 <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
             </li>
         </stages>
+        <addedPartProps>
+            <solid>true</solid>
+        </addedPartProps>
         <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
@@ -58,10 +61,10 @@
         <defName>InstallStomachSymbiote</defName>
         <label>install stomach symbiote</label>
         <description>Install a stomach symbiote.</description>
-        <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing stomach symbiote.</jobString>
 
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
+        <workerClass>Recipe_InstallImplant</workerClass>
         <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
@@ -84,5 +87,37 @@
             <li>Stomach</li>
         </appliedOnFixedBodyParts>
         <addsHediff>StomachSymbioteHediff</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveStomachSymbiote</defName>
+        <label>remove stomach symbiote</label>
+        <description>Remove a stomach symbiote.</description>
+        <jobString>Removing stomach symbiote.</jobString>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workAmount>3000</workAmount>
+        <removesHediff>StomachSymbioteHediff</removesHediff>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s stomach symbiote.</successfullyRemovedHediffMessage>
+        <surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
     </RecipeDef>
 </Defs>

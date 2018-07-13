@@ -77,10 +77,10 @@
         <defName>InstallHeartSymbiote</defName>
         <label>install heart symbiote</label>
         <description>Install a heart symbiote.</description>
-        <workerClass>Recipe_InstallImplant</workerClass>
         <jobString>Installing heart symbiote.</jobString>
 
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
+        <workerClass>Recipe_InstallImplant</workerClass>
         <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
@@ -103,5 +103,40 @@
             <li>Heart</li>
         </appliedOnFixedBodyParts>
         <addsHediff>HeartSymbioteHediff</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveHeartSymbiote</defName>
+        <label>remove heart symbiote</label>
+        <description>Remove a heart symbiote.</description>
+        <jobString>Removing heart symbiote.</jobString>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workAmount>6000</workAmount>
+        <removesHediff>HeartSymbioteHediff</removesHediff>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart symbiote.</successfullyRemovedHediffMessage>
+        <surgerySuccessChanceFactor>0.5</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.7</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Medicine>15</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
     </RecipeDef>
 </Defs>
