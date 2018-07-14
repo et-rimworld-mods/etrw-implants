@@ -5,10 +5,20 @@
         <label>toxic lung</label>
         <description>The Tox-O-Mat toxin-filtering lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, but the reduced breathing function limited its usage to slave-operated chem-cleanup crews.</description>
 
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <Plasteel>5</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
         <statBases>
+            <WorkToMake>10000</WorkToMake>
             <MarketValue>800</MarketValue>
-            <Mass>1.5</Mass>
+            <Mass>3</Mass>
         </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
     </ThingDef>
 
     <HediffDef ParentName="AddedBodyPartBase">
