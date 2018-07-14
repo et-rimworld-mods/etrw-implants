@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SymbioteBase">
+        <defName>ToxicLung</defName>
+        <label>toxic lung</label>
+        <description>The Tox-O-Mat toxin-filtering lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, but the reduced breathing function limited its usage to slave-operated chem-cleanup crews.</description>
+
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>1.5</Mass>
+        </statBases>
+    </ThingDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ToxicLungHediff</defName>
+        <label>toxic lung</label>
+        <labelNoun>a toxic lung</labelNoun>
+        <spawnThingOnRemoved>ToxicLung</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.7</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallToxicLung</defName>
+        <label>install toxic lung</label>
+        <description>Install a toxic lung.</description>
+        <jobString>Installing toxic lung.</jobString>
+
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <workAmount>100</workAmount>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ToxicLung</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ToxicLung</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ToxicLungHediff</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveToxicLung</defName>
+        <label>remove toxic lung</label>
+        <description>Remove a toxic lung.</description>
+        <jobString>Removing toxic lung.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s toxic lung.</successfullyRemovedHediffMessage>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workAmount>1000</workAmount>
+        <removesHediff>ToxicLungHediff</removesHediff>
+        <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+</Defs>
