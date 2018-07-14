@@ -11,7 +11,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="ImplantHediffBase">
         <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
