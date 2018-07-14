@@ -11,6 +11,9 @@
 
             <li>InstallEarSymbiote</li>
             <li>RemoveEarSymbiote</li>
+
+            <li>InstallToxicLung</li>
+            <li>RemoveToxicLung</li>
         </value>
     </Operation>
 </Patch>

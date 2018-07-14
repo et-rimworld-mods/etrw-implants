@@ -20,6 +20,16 @@
             <solid>true</solid>
             <partEfficiency>0.7</partEfficiency>
         </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>ToxicSensitivity</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
     </HediffDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -29,10 +39,19 @@
         <jobString>Installing toxic lung.</jobString>
 
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-        <workAmount>100</workAmount>
-        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
-        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <workAmount>2000</workAmount>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+        </skillRequirements>
         <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
             <li>
                 <filter>
                     <thingDefs>
@@ -43,12 +62,15 @@
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
             <thingDefs>
                 <li>ToxicLung</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>Ear</li>
+            <li>Lung</li>
         </appliedOnFixedBodyParts>
         <addsHediff>ToxicLungHediff</addsHediff>
     </RecipeDef>
@@ -61,10 +83,8 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s toxic lung.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
-        <workAmount>1000</workAmount>
+        <workAmount>2500</workAmount>
         <removesHediff>ToxicLungHediff</removesHediff>
-        <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
-        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
         <skillRequirements>
             <Medicine>3</Medicine>
         </skillRequirements>
