@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="SymbioteBase">
+    <ThingDef ParentName="BodyPartBionicBase">
         <defName>ToxicLung</defName>
         <label>toxic lung</label>
         <description>The Tox-O-Mat toxin-filtering lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, but the reduced breathing function limited its usage to slave-operated chem-cleanup crews.</description>
@@ -22,12 +22,9 @@
         </addedPartProps>
         <stages>
             <li>
-                <capMods>
-                    <li>
-                        <capacity>ToxicSensitivity</capacity>
-                        <offset>-0.4</offset>
-                    </li>
-                </capMods>
+                <statOffsets>
+                    <ToxicSensitivity>-0.4</ToxicSensitivity>
+                </statOffsets>
             </li>
         </stages>
     </HediffDef>
