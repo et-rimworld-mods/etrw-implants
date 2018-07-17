@@ -13,7 +13,7 @@
         </costList>
         <statBases>
             <WorkToMake>10000</WorkToMake>
-            <MarketValue>800</MarketValue>
+            <MarketValue>600</MarketValue>
             <Mass>3</Mass>
         </statBases>
         <techHediffsTags>
@@ -80,35 +80,5 @@
             <li>Lung</li>
         </appliedOnFixedBodyParts>
         <addsHediff>ToxicLungHediff</addsHediff>
-    </RecipeDef>
-
-    <RecipeDef ParentName="SurgeryFlesh">
-        <defName>RemoveToxicLung</defName>
-        <label>remove toxic lung</label>
-        <description>Remove a toxic lung.</description>
-        <jobString>Removing toxic lung.</jobString>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s toxic lung.</successfullyRemovedHediffMessage>
-
-        <workerClass>Recipe_RemoveHediff</workerClass>
-        <workAmount>2500</workAmount>
-        <removesHediff>ToxicLungHediff</removesHediff>
-        <skillRequirements>
-            <Medicine>3</Medicine>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-        </fixedIngredientFilter>
     </RecipeDef>
 </Defs>

@@ -6,7 +6,7 @@
         <description>The stomach symbiote was designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.</description>
 
         <statBases>
-            <MarketValue>800</MarketValue>
+            <MarketValue>400</MarketValue>
             <Mass>0.2</Mass>
         </statBases>
     </ThingDef>
