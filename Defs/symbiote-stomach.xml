@@ -46,8 +46,8 @@
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
         <workAmount>1000</workAmount>
-        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
-        <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>4</surgerySuccessChanceFactor> <!-- just like AdministerMechSerumHealer! :) -->
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
         <ingredients>
             <li>
                 <filter>

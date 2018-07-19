@@ -41,7 +41,7 @@
         <!--Just stick it in their ear. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
         <workAmount>100</workAmount>
-        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor> <!-- just like AdministerMechSerumHealer! :) -->
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
         <ingredients>
             <li>
