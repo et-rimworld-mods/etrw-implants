@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
+        <defName>StimulantKidney</defName>
+        <label>stimulant kidney</label>
+        <description>The Caffeine Pal kidney replacement provides a steady supply of stimulants to the user's blood-stream. Despite its name, caffeine is the smallest ingredient, by percentage. All other stimulants are the intellectual property of the Stimu-Mat corporation, protected by applicable galaxy and stellar-system law.</description>
+
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>StimulantKidneyHediff</defName>
+        <label>stimulant kidney</label>
+        <labelNoun>a stimulant kidney</labelNoun>
+        <spawnThingOnRemoved>StimulantKidney</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.9</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <restFallFactorOffset>-0.2</restFallFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.02</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallStimulantKidney</defName>
+        <label>install stimulant kidney</label>
+        <description>Install a stimulant kidney.</description>
+        <jobString>Installing stimulant kidney.</jobString>
+
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Medicine>7</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>StimulantKidney</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>StimulantKidney</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Kidney</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>StimulantKidneyHediff</addsHediff>
+    </RecipeDef>
+</Defs>

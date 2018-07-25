@@ -12,8 +12,9 @@
             <li>InstallEarSymbiote</li>
             <li>RemoveEarSymbiote</li>
 
-            <!--things which subclass bionic parts can be removed by default, so only need install recipes-->
+            <!--things which subclass bionic parts can be removed by default, so only need install recipes?-->
             <li>InstallToxicLung</li>
+            <li>InstallStimulantKidney</li>
         </value>
     </Operation>
 </Patch>

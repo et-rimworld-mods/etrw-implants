@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BodyPartBionicBase">
+    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
         <defName>ToxicLung</defName>
         <label>toxic lung</label>
         <description>The Tox-O-Mat artificial lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, useful for slave-operated cleanup crews.</description>
 
-        <techLevel>Spacer</techLevel>
-        <costList>
-            <Cloth>30</Cloth>
-            <Steel>15</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
-        </costList>
         <statBases>
-            <WorkToMake>10000</WorkToMake>
             <MarketValue>600</MarketValue>
             <Mass>3</Mass>
         </statBases>
-        <techHediffsTags>
-            <li>Advanced</li>
-        </techHediffsTags>
     </ThingDef>
 
     <HediffDef ParentName="AddedBodyPartBase">
