@@ -15,6 +15,9 @@
             <!--things which subclass bionic parts can be removed by default, so only need install recipes?-->
             <li>InstallToxicLung</li>
             <li>InstallStimulantKidney</li>
+
+            <li>InstallWoodenNose</li>
+            <li>InstallWoodenHand</li>
         </value>
     </Operation>
 </Patch>
