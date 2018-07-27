@@ -22,15 +22,15 @@
                 <capMods>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <offset>0.5</offset>
+                        <offset>0.2</offset>
                     </li>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <offset>0.10</offset>
+                        <offset>0.05</offset>
                     </li>
                     <li>
                         <capacity>BloodFiltration</capacity>
-                        <offset>0.20</offset>
+                        <offset>0.1</offset>
                     </li>
                 </capMods>
             </li>
@@ -61,7 +61,7 @@
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
         <workAmount>1500</workAmount>
-        <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor> <!-- just like AdministerMechSerumHealer! :) -->
+        <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
         <ingredients>
             <li>

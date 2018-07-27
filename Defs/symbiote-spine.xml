@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SymbioteBase">
+        <defName>SpineSymbiote</defName>
+        <label>spine symbiote</label>
+        <description>A genetically engineered bio-polymer matrix, which spreads throughout the nervous system. It increases effective motor skill, movement efficiency, and sensory input.</description>
+
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Mass>0.2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>SpineSymbioteHediff</defName>
+        <label>spine symbiote</label>
+        <labelNoun>a spine symbiote</labelNoun>
+        <stages>
+            <li>
+                <painFactor>1.1</painFactor>
+                <painOffset>0.05</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>SpineSymbioteThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>SpineSymbioteHediff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>spine symbiote</label>
+                <description>In addition to the constant pain, my sense of touch and balance feel...weird.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallSpineSymbiote</defName>
+        <label>install spine symbiote</label>
+        <description>Install a spine symbiote.</description>
+        <jobString>Installing spine symbiote.</jobString>
+
+        <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>1500</workAmount>
+        <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SpineSymbiote</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SpineSymbiote</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Spine</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>SpineSymbioteHediff</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>RemoveSpineSymbiote</defName>
+        <label>remove spine symbiote</label>
+        <description>Remove a spine symbiote.</description>
+        <jobString>Removing spine symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s spine symbiote.</successfullyRemovedHediffMessage>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <workAmount>6000</workAmount>
+        <removesHediff>SpineSymbioteHediff</removesHediff>
+        <surgerySuccessChanceFactor>0.3</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Medicine>18</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+</Defs>
