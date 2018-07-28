@@ -80,13 +80,13 @@
             <li>
                 <label>heart symbiote</label>
                 <description>This this is still chewing its way into my guts...</description>
-                <baseMoodEffect>-15</baseMoodEffect>
+                <baseMoodEffect>-11</baseMoodEffect>
             </li>
 
             <li>
                 <label>heart symbiote</label>
                 <description>It's settled down a bit, but is still pretty uncomfortable</description>
-                <baseMoodEffect>-5</baseMoodEffect>
+                <baseMoodEffect>-9</baseMoodEffect>
             </li>
 
             <li>

@@ -51,7 +51,7 @@
             <li>
                 <label>stomach symbiote</label>
                 <description>This thing is still eating into my body...</description>
-                <baseMoodEffect>-15</baseMoodEffect>
+                <baseMoodEffect>-9</baseMoodEffect>
             </li>
 
             <li>

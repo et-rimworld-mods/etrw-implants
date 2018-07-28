@@ -68,13 +68,13 @@
             <li>
                 <label>spine symbiote</label>
                 <description>This stuff is still spreading, chewing into every corner of my body...</description>
-                <baseMoodEffect>-20</baseMoodEffect>
+                <baseMoodEffect>-7</baseMoodEffect>
             </li>
 
             <li>
                 <label>spine symbiote</label>
                 <description>It feels less painful now...</description>
-                <baseMoodEffect>-10</baseMoodEffect>
+                <baseMoodEffect>-5</baseMoodEffect>
             </li>
 
             <li>
