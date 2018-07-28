@@ -50,8 +50,6 @@
             </li>
 
             <li>
-                <label>fully integrated</label>
-
                 <minSeverity>6</minSeverity>
                 <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
                 <painFactor>0.9</painFactor>

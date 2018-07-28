@@ -42,8 +42,6 @@
             </li>
 
             <li>
-                <label>fully integrated</label>
-
                 <minSeverity>15</minSeverity>
                 <painFactor>1.1</painFactor>
                 <painOffset>0.05</painOffset>

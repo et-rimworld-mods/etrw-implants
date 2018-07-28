@@ -36,8 +36,6 @@
             </li>
 
             <li>
-                <label>fully integrated</label>
-
                 <minSeverity>9</minSeverity>
                 <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
             </li>
