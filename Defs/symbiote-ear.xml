@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="SymbioteBase">
-        <defName>EarSymbiote</defName>
-        <label>ear symbiote</label>
+        <defName>PsychicSymbiote</defName>
+        <label>psychic symbiote</label>
         <description>A small yellow fish, once inserted into the ear (or closest similar body part), this symbiotic animal allows you to more readily understand other people, and thus also be understood. How it functions is complete fiction. It's best not to think about it too much.</description>
 
         <statBases>
-            <MarketValue>1500</MarketValue>
+            <MarketValue>2500</MarketValue>
             <Mass>0.1</Mass>
         </statBases>
     </ThingDef>
 
     <HediffDef ParentName="SymbioteHediffBase">
-        <defName>EarSymbioteHediff</defName>
-        <label>ear symbiote</label>
-        <labelNoun>an ear symbiote</labelNoun>
+        <defName>PsychicSymbioteHediff</defName>
+        <label>psychic symbiote</label>
+        <labelNoun>an psychic symbiote</labelNoun>
 
-        <spawnThingOnRemoved>EarSymbiote</spawnThingOnRemoved>
+        <spawnThingOnRemoved>PsychicSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <capMods>
                     <li>
                         <capacity>Hearing</capacity>
-                        <offset>0.2</offset>
+                        <offset>0.5</offset>
                     </li>
                     <li>
                         <capacity>Talking</capacity>
-                        <offset>0.1</offset>
+                        <offset>0.5</offset>
                     </li>
                 </capMods>
             </li>
@@ -34,10 +34,10 @@
     </HediffDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
-        <defName>InstallEarSymbiote</defName>
-        <label>install ear symbiote</label>
-        <description>Install an ear symbiote.</description>
-        <jobString>Installing ear symbiote.</jobString>
+        <defName>InstallPsychicSymbiote</defName>
+        <label>install psychic symbiote</label>
+        <description>Install an psychic symbiote.</description>
+        <jobString>Installing psychic symbiote.</jobString>
 
         <!--Just stick it in their ear. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
@@ -48,7 +48,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>EarSymbiote</li>
+                        <li>PsychicSymbiote</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -56,25 +56,25 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>EarSymbiote</li>
+                <li>PsychicSymbiote</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>Ear</li>
+            <li>Head</li>
         </appliedOnFixedBodyParts>
-        <addsHediff>EarSymbioteHediff</addsHediff>
+        <addsHediff>PsychicSymbioteHediff</addsHediff>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
-        <defName>RemoveEarSymbiote</defName>
-        <label>remove ear symbiote</label>
-        <description>Remove an ear symbiote.</description>
-        <jobString>Removing ear symbiote.</jobString>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s ear symbiote.</successfullyRemovedHediffMessage>
+        <defName>RemovePsychicSymbiote</defName>
+        <label>remove psychic symbiote</label>
+        <description>Remove a psychic symbiote.</description>
+        <jobString>Removing psychic symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s psychic symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
         <workAmount>1000</workAmount>
-        <removesHediff>EarSymbioteHediff</removesHediff>
+        <removesHediff>PsychicSymbioteHediff</removesHediff>
         <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
         <skillRequirements>
