@@ -21,7 +21,7 @@
             <li>
                 <label>freshly implanted</label>
 
-                <painOffset>0.4</painOffset>
+                <painOffset>0.1</painOffset>
                 <hungerRateFactorOffset>-0.9</hungerRateFactorOffset>
                 <vomitMtbDays>0.1</vomitMtbDays>
             </li>
@@ -30,7 +30,7 @@
                 <label>partially integrated</label>
 
                 <minSeverity>3</minSeverity>
-                <painOffset>0.2</painOffset>
+                <painOffset>0.05</painOffset>
                 <hungerRateFactorOffset>-0.6</hungerRateFactorOffset>
                 <vomitMtbDays>0.2</vomitMtbDays>
             </li>

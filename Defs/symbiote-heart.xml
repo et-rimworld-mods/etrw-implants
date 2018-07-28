@@ -21,7 +21,7 @@
             <li>
                 <label>freshly implanted</label>
 
-                <painOffset>0.3</painOffset>
+                <painOffset>0.15</painOffset>
                 <hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
                 <vomitMtbDays>0.2</vomitMtbDays>
                 <capMods>

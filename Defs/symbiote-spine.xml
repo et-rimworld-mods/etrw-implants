@@ -21,7 +21,7 @@
             <li>
                 <label>freshly implanted</label>
 
-                <painOffset>0.4</painOffset>
+                <painOffset>0.2</painOffset>
                 <capMods>
                     <li>
                         <capacity>Moving</capacity>
@@ -38,7 +38,7 @@
                 <label>partially integrated</label>
 
                 <minSeverity>5</minSeverity>
-                <painOffset>0.2</painOffset>
+                <painOffset>0.1</painOffset>
             </li>
 
             <li>
