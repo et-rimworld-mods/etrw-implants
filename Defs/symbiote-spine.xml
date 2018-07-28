@@ -11,12 +11,40 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="SymbioteHediffBase">
         <defName>SpineSymbioteHediff</defName>
         <label>spine symbiote</label>
         <labelNoun>a spine symbiote</labelNoun>
+
+        <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
+                <label>freshly implanted</label>
+
+                <painOffset>0.4</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+
+            <li>
+                <label>partially integrated</label>
+
+                <minSeverity>5</minSeverity>
+                <painOffset>0.2</painOffset>
+            </li>
+
+            <li>
+                <label>fully integrated</label>
+
+                <minSeverity>15</minSeverity>
                 <painFactor>1.1</painFactor>
                 <painOffset>0.05</painOffset>
                 <capMods>
@@ -31,7 +59,6 @@
                 </capMods>
             </li>
         </stages>
-        <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
     <ThoughtDef>
@@ -42,7 +69,19 @@
         <stages>
             <li>
                 <label>spine symbiote</label>
-                <description>In addition to the constant pain, my sense of touch and balance feel...weird.</description>
+                <description>This stuff is still spreading, chewing into every corner of my body...</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+
+            <li>
+                <label>spine symbiote</label>
+                <description>It feels less painful now...</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+
+            <li>
+                <label>spine symbiote</label>
+                <description>In addition to the chronic pain, my sense of touch and balance feel...weird.</description>
                 <baseMoodEffect>-3</baseMoodEffect>
             </li>
         </stages>

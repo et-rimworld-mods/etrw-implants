@@ -11,12 +11,48 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="SymbioteHediffBase">
         <defName>HeartSymbioteHediff</defName>
         <label>heart symbiote</label>
         <labelNoun>a heart symbiote</labelNoun>
+
+        <spawnThingOnRemoved>HeartSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
+                <label>freshly implanted</label>
+
+                <painOffset>0.5</painOffset>
+                <hungerRateFactorOffset>-0.2</hungerRateFactorOffset>
+                <vomitMtbDays>0.2</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+
+            <li>
+                <label>partially integrated</label>
+
+                <minSeverity>2</minSeverity>
+                <painFactor>0.95</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+
+            <li>
+                <label>fully integrated</label>
+
+                <minSeverity>6</minSeverity>
                 <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
                 <painFactor>0.9</painFactor>
                 <capMods>
@@ -35,7 +71,6 @@
                 </capMods>
             </li>
         </stages>
-        <spawnThingOnRemoved>HeartSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
     <ThoughtDef>
@@ -44,6 +79,18 @@
         <hediff>HeartSymbioteHediff</hediff>
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
+            <li>
+                <label>heart symbiote</label>
+                <description>This this is still chewing its way into my guts...</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+
+            <li>
+                <label>heart symbiote</label>
+                <description>It's settled down a bit, but is still pretty uncomfortable</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+
             <li>
                 <label>heart symbiote</label>
                 <description>I feel jacked-up all the time, and I don't know how much longer I stay like this.</description>

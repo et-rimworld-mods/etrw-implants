@@ -11,16 +11,37 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="SymbioteHediffBase">
         <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
+
+        <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
+                <label>freshly implanted</label>
+
+                <painOffset>0.8</painOffset>
+                <hungerRateFactorOffset>-0.9</hungerRateFactorOffset>
+                <vomitMtbDays>0.1</vomitMtbDays>
+            </li>
+
+            <li>
+                <label>partially integrated</label>
+
+                <minSeverity>3</minSeverity>
+                <painOffset>0.4</painOffset>
+                <hungerRateFactorOffset>-0.6</hungerRateFactorOffset>
+                <vomitMtbDays>0.2</vomitMtbDays>
+            </li>
+
+            <li>
+                <label>fully integrated</label>
+
+                <minSeverity>9</minSeverity>
                 <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
             </li>
         </stages>
-        <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
     <ThoughtDef>
@@ -31,7 +52,19 @@
         <stages>
             <li>
                 <label>stomach symbiote</label>
-                <description>This thing is keeping me alive, but it disrupts my natural hormones, putting me in a bad mood. Sometimes I can feel it wriggling around down there.</description>
+                <description>This thing is still eating into my body...</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+
+            <li>
+                <label>stomach symbiote</label>
+                <description>It's settled down a bit, but it's still pretty painful.</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+
+            <li>
+                <label>stomach symbiote</label>
+                <description>This thing is keeping me alive, but it disrupts my natural hormones, putting me in a bad mood. Sometimes I can still feel it wriggling around down there.</description>
                 <baseMoodEffect>-5</baseMoodEffect>
             </li>
         </stages>

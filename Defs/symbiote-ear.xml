@@ -11,10 +11,12 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="ImplantHediffBase">
+    <HediffDef ParentName="SymbioteHediffBase">
         <defName>EarSymbioteHediff</defName>
         <label>ear symbiote</label>
         <labelNoun>an ear symbiote</labelNoun>
+
+        <spawnThingOnRemoved>EarSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <capMods>
@@ -29,7 +31,6 @@
                 </capMods>
             </li>
         </stages>
-        <spawnThingOnRemoved>EarSymbiote</spawnThingOnRemoved>
     </HediffDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
