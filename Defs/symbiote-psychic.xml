@@ -3,7 +3,7 @@
     <ThingDef ParentName="SymbioteBase">
         <defName>PsychicSymbiote</defName>
         <label>psychic symbiote</label>
-        <description>A small yellow fish, once inserted into the ear (or closest similar body part), this symbiotic animal allows you to more readily understand other people, and thus also be understood. How it functions is complete fiction. It's best not to think about it too much.</description>
+        <description>A small yellow fish, once inserted into the ear (or closest similar body part), this symbiotic animal allows you to more readily understand other people, and thus also be understood. How it functions is complete and utter fiction. It's best not to think about it too much.</description>
 
         <statBases>
             <MarketValue>2500</MarketValue>

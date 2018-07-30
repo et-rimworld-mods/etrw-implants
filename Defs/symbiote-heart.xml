@@ -3,7 +3,9 @@
     <ThingDef ParentName="SymbioteBase">
         <defName>HeartSymbiote</defName>
         <label>heart symbiote</label>
-        <description>An advanced, genetically-engineered symbiote, designed for the military. Useful for its increased soldier function, it also causes increased hunger and negatively affects the soldier's mood.</description>
+        <description>An advanced, genetically-engineered symbiote, designed for the military. Useful for its increased soldier function, it also causes increased hunger and negatively affects the soldier's mood.
+
+        Like most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
 
         <statBases>
             <MarketValue>2000</MarketValue>
@@ -50,6 +52,8 @@
             </li>
 
             <li>
+                <!--fully integrated-->
+
                 <minSeverity>6</minSeverity>
                 <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
                 <painFactor>0.9</painFactor>
