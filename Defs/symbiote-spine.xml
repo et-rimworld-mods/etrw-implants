@@ -97,6 +97,10 @@
 
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
+        <addsHediff>SpineSymbioteHediff</addsHediff>
+        <appliedOnFixedBodyParts>
+            <li>Spine</li>
+        </appliedOnFixedBodyParts>
         <workAmount>1500</workAmount>
         <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
@@ -115,10 +119,6 @@
                 <li>SpineSymbiote</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-            <li>Spine</li>
-        </appliedOnFixedBodyParts>
-        <addsHediff>SpineSymbioteHediff</addsHediff>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -129,8 +129,8 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s spine symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
-        <workAmount>6000</workAmount>
         <removesHediff>SpineSymbioteHediff</removesHediff>
+        <workAmount>6000</workAmount>
         <surgerySuccessChanceFactor>0.3</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
         <skillRequirements>

@@ -109,6 +109,10 @@
 
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
+        <addsHediff>HeartSymbioteHediff</addsHediff>
+        <appliedOnFixedBodyParts>
+            <li>Heart</li>
+        </appliedOnFixedBodyParts>
         <workAmount>1500</workAmount>
         <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
@@ -127,10 +131,6 @@
                 <li>HeartSymbiote</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-            <li>Heart</li>
-        </appliedOnFixedBodyParts>
-        <addsHediff>HeartSymbioteHediff</addsHediff>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -141,8 +141,8 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
-        <workAmount>6000</workAmount>
         <removesHediff>HeartSymbioteHediff</removesHediff>
+        <workAmount>6000</workAmount>
         <surgerySuccessChanceFactor>0.5</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.7</deathOnFailedSurgeryChance>
         <skillRequirements>

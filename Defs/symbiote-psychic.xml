@@ -41,6 +41,10 @@
 
         <!--Just stick it in their ear. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
+        <addsHediff>PsychicSymbioteHediff</addsHediff>
+        <appliedOnFixedBodyParts>
+            <li>Head</li>
+        </appliedOnFixedBodyParts>
         <workAmount>100</workAmount>
         <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor> <!-- just like AdministerMechSerumHealer! :) -->
         <deathOnFailedSurgeryChance>0.0</deathOnFailedSurgeryChance>
@@ -59,10 +63,6 @@
                 <li>PsychicSymbiote</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-            <li>Head</li>
-        </appliedOnFixedBodyParts>
-        <addsHediff>PsychicSymbioteHediff</addsHediff>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
@@ -73,8 +73,8 @@
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s psychic symbiote.</successfullyRemovedHediffMessage>
 
         <workerClass>Recipe_RemoveHediff</workerClass>
-        <workAmount>1000</workAmount>
         <removesHediff>PsychicSymbioteHediff</removesHediff>
+        <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
         <skillRequirements>

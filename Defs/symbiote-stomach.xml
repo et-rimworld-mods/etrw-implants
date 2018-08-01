@@ -80,6 +80,10 @@
 
         <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
         <workerClass>Recipe_InstallImplant</workerClass>
+        <addsHediff>StomachSymbioteHediff</addsHediff>
+        <appliedOnFixedBodyParts>
+            <li>Stomach</li>
+        </appliedOnFixedBodyParts>
         <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>4</surgerySuccessChanceFactor>
         <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
@@ -98,10 +102,6 @@
                 <li>StomachSymbiote</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-            <li>Stomach</li>
-        </appliedOnFixedBodyParts>
-        <addsHediff>StomachSymbioteHediff</addsHediff>
     </RecipeDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
