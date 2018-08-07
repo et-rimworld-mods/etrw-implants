@@ -3,12 +3,10 @@
     <ThingDef ParentName="SymbioteBase">
         <defName>SpineSymbiote</defName>
         <label>spine symbiote</label>
-        <description>A genetically engineered bio-polymer matrix, which spreads throughout the nervous system. It increases effective motor skill, movement efficiency, and sensory input.
-
-        Like most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
+        <description>A genetically engineered bio-polymer matrix, which spreads throughout the nervous system. It increases effective motor skill, movement efficiency, and sensory input.\n\nLike most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
 
         <statBases>
-            <MarketValue>2000</MarketValue>
+            <MarketValue>1800</MarketValue>
             <Mass>0.2</Mass>
         </statBases>
     </ThingDef>
@@ -52,11 +50,11 @@
                 <capMods>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>0.15</offset>
+                        <offset>0.1</offset>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <offset>0.3</offset>
+                        <offset>0.2</offset>
                     </li>
                 </capMods>
             </li>
