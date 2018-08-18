@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="BodyPartArtificialNoCraftBase">
         <defName>ToxicLung</defName>
-        <label>toxic lung</label>
+        <label>Tox-O-Mat Lung</label>
         <description>The Tox-O-Mat artificial lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, useful for slave-operated cleanup crews.</description>
 
         <statBases>
@@ -13,8 +13,8 @@
 
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>ToxicLungHediff</defName>
-        <label>toxic lung</label>
-        <labelNoun>a toxic lung</labelNoun>
+        <label>Tox-O-Mat Lung</label>
+        <labelNoun>a Tox-O-Mat lung</labelNoun>
         <spawnThingOnRemoved>ToxicLung</spawnThingOnRemoved>
         <addedPartProps>
             <solid>true</solid>
@@ -31,9 +31,9 @@
 
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>InstallToxicLung</defName>
-        <label>install toxic lung</label>
-        <description>Install a toxic lung.</description>
-        <jobString>Installing toxic lung.</jobString>
+        <label>install Tox-O-Mat lung</label>
+        <description>Install a Tox-O-Mat lung.</description>
+        <jobString>Installing a Tox-O-Mat lung.</jobString>
 
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>2000</workAmount>

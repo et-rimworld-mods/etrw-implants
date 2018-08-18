@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
+        <defName>ShoddyEye</defName>
+        <label>Opto-Mat Eye</label>
+        <description>The Opto-Mat artificial eye was designed to improve worker function on factory planets. Its micro-database and sub-persona AI highlight important objects, and offer advice on recommended procedures. Its shoddy build quality and cheap electronics however, sometimes cause the wearer to experience vivid hallucinations. On average, the lost time is more than made up for by the increased worker output, so they have not been changed.</description>
+
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ShoddyEyeHediff</defName>
+        <label>Opto-Mat Eye</label>
+        <labelNoun>an Opto-Mat eye</labelNoun>
+        <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.1</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+                </statOffsets>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Wander_Psychotic</mentalState>
+                        <mtbDays>20</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>Wander_Sad</mentalState>
+                        <mtbDays>15</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>WanderConfused</mentalState>
+                        <mtbDays>10</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>InstallShoddyEye</defName>
+        <label>install Opto-Mat eye</label>
+        <description>Install an Opto-Mat eye.</description>
+        <jobString>Installing Opto-Mat eye.</jobString>
+
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <workAmount>3000</workAmount>
+        <skillRequirements>
+            <Medicine>7</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ShoddyEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>ShoddyEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ShoddyEyeHediff</addsHediff>
+    </RecipeDef>
+</Defs>
