@@ -15,6 +15,7 @@
         <defName>ShoddyEyeHediff</defName>
         <label>Opto-Mat Eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>
+
         <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
         <addedPartProps>
             <solid>true</solid>

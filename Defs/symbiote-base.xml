@@ -29,15 +29,15 @@
     </ThingDef>
 
     <HediffDef Name="SymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
-        <scenarioCanAdd>true</scenarioCanAdd>
         <isBad>false</isBad>
         <hediffClass>HediffWithComps</hediffClass>
 
         <!--60 days is one year-->
+        <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0.001</minSeverity>
         <maxSeverity>60</maxSeverity>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <!--Surgeries add hediffs starting at 0.5, so this isn't quite lined up nicely...-->
                 <severityPerDay>1.0</severityPerDay>
             </li>
         </comps>
