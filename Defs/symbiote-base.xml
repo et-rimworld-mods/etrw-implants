@@ -7,6 +7,15 @@
             <drawSize>0.80</drawSize>
         </graphicData>
 
+        <!--
+        Note: not-a-body-part-replacement hediffs, like implants / my symbiotes, can't spawn things on removal.
+        Only body-part-replacement hediffs, like wooden legs and bionic hearts can do that.
+        See this forum thread: https://ludeon.com/forums/index.php?topic=42444.0
+        Flavor-text- / hand-wave-wise, I'm willing to put up with these being "attached" / "integrated" with the body,
+        and irrecoverable.
+
+        <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
+        -->
         <thingSetMakerTags>
             <li>RewardSpecial</li>
         </thingSetMakerTags>

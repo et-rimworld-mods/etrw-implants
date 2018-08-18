@@ -16,7 +16,6 @@
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
 
-        <spawnThingOnRemoved>StomachSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <label>freshly implanted</label>

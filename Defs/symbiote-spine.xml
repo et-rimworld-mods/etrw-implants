@@ -16,7 +16,6 @@
         <label>spine symbiote</label>
         <labelNoun>a spine symbiote</labelNoun>
 
-        <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <label>freshly implanted</label>

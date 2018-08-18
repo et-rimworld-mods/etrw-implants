@@ -16,7 +16,6 @@
         <label>heart symbiote</label>
         <labelNoun>a heart symbiote</labelNoun>
 
-        <spawnThingOnRemoved>HeartSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <label>freshly implanted</label>

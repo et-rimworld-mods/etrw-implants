@@ -16,7 +16,6 @@
         <label>psychic symbiote</label>
         <labelNoun>an psychic symbiote</labelNoun>
 
-        <spawnThingOnRemoved>PsychicSymbiote</spawnThingOnRemoved>
         <stages>
             <li>
                 <capMods>
