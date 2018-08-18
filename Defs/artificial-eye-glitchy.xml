@@ -28,16 +28,28 @@
                 </statOffsets>
                 <mentalStateGivers>
                     <li>
-                        <mentalState>Wander_Psychotic</mentalState>
-                        <mtbDays>20</mtbDays>
-                    </li>
-                    <li>
-                        <mentalState>Wander_Sad</mentalState>
+                        <mentalState>WanderConfused</mentalState>
                         <mtbDays>15</mtbDays>
                     </li>
                     <li>
-                        <mentalState>WanderConfused</mentalState>
-                        <mtbDays>10</mtbDays>
+                        <mentalState>Wander_Sad</mentalState>
+                        <mtbDays>20</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>Wander_Psychotic</mentalState>
+                        <mtbDays>30</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>40</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>Slaughterer</mentalState>
+                        <mtbDays>60</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>MurderousRage</mentalState>
+                        <mtbDays>90</mtbDays>
                     </li>
                 </mentalStateGivers>
             </li>

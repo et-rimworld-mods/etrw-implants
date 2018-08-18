@@ -16,8 +16,9 @@
             <li>RemoveSpineSymbiote</li>
 
             <!--things which subclass bionic parts can be removed by default, so only need install recipes?-->
-            <li>InstallToxicLung</li>
+            <li>InstallShoddyEye</li>
             <li>InstallStimulantKidney</li>
+            <li>InstallToxicLung</li>
 
             <li>InstallWoodenNose</li>
             <li>InstallWoodenHand</li>

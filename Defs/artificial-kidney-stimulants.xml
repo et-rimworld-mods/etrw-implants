@@ -36,7 +36,7 @@
 
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>InstallStimulantKidney</defName>
-        <label>install a Caffeine Pal</label>
+        <label>install Caffeine Pal</label>
         <description>Install a Caffeine Pal.</description>
         <jobString>Installing a Caffeine Pal.</jobString>
 
