@@ -21,8 +21,10 @@
                 <label>freshly implanted</label>
 
                 <painOffset>0.1</painOffset>
-                <hungerRateFactorOffset>-0.9</hungerRateFactorOffset>
                 <vomitMtbDays>0.1</vomitMtbDays>
+                <statOffsets>
+                    <HungerRateMultiplier>-0.9</HungerRateMultiplier>
+                </statOffsets>
             </li>
 
             <li>
@@ -30,15 +32,19 @@
 
                 <minSeverity>3</minSeverity>
                 <painOffset>0.05</painOffset>
-                <hungerRateFactorOffset>-0.6</hungerRateFactorOffset>
                 <vomitMtbDays>0.2</vomitMtbDays>
+                <statOffsets>
+                    <HungerRateMultiplier>-0.6</HungerRateMultiplier>
+                </statOffsets>
             </li>
 
             <li>
                 <!--fully integrated-->
 
                 <minSeverity>9</minSeverity>
-                <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
+                <statOffsets>
+                    <HungerRateMultiplier>-0.3</HungerRateMultiplier>
+                </statOffsets>
             </li>
         </stages>
     </HediffDef>
