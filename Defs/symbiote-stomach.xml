@@ -88,8 +88,8 @@
             <li>Stomach</li>
         </appliedOnFixedBodyParts>
         <workAmount>1000</workAmount>
-        <surgerySuccessChanceFactor>4</surgerySuccessChanceFactor>
-        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>8</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
         <ingredients>
             <li>
                 <filter>

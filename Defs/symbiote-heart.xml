@@ -113,8 +113,8 @@
             <li>Heart</li>
         </appliedOnFixedBodyParts>
         <workAmount>1500</workAmount>
-        <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-        <deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+        <surgerySuccessChanceFactor>4</surgerySuccessChanceFactor>
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
         <ingredients>
             <li>
                 <filter>
