@@ -20,8 +20,8 @@
             <li>InstallStimulantKidney</li>
             <li>InstallToxicLung</li>
 
-            <li>InstallWoodenNose</li>
-            <li>InstallWoodenHand</li>
+            <li>InstallWoodenProsthesisSmall</li>
+            <li>InstallWoodenProsthesisMedium</li>
         </value>
     </Operation>
 </Patch>
