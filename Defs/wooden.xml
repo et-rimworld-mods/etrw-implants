@@ -4,9 +4,11 @@
         <defName>WoodenProsthesisSmall</defName>
         <label>wooden prosthesis (small)</label>
         <labelNoun>a wooden prosthesis (small)</labelNoun>
+
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>0.4</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
         </addedPartProps>
     </HediffDef>
 
@@ -59,9 +61,11 @@
         <defName>WoodenProsthesisMedium</defName>
         <label>wooden prosthesis (medium)</label>
         <labelNoun>a wooden prosthesis (medium)</labelNoun>
+
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>0.2</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
         </addedPartProps>
     </HediffDef>
 
@@ -69,6 +73,7 @@
         <defName>InstallWoodenProsthesisMedium</defName>
         <label>install wooden prosthesis (medium)</label>
         <description>Install a wooden prosthesis (medium).</description>
+
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <jobString>Installing wooden prosthesis (medium).</jobString>
         <workAmount>1000</workAmount>

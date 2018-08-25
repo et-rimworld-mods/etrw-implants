@@ -20,6 +20,7 @@
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>1.1</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
         </addedPartProps>
         <stages>
             <li>
