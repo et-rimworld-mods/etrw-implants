@@ -15,13 +15,11 @@
             <li>InstallSpineSymbiote</li>
             <li>RemoveSpineSymbiote</li>
 
+
             <!--things which subclass bionic parts can be removed by default, so only need install recipes?-->
             <li>InstallShoddyEye</li>
             <li>InstallStimulantKidney</li>
             <li>InstallToxicLung</li>
-
-            <li>InstallWoodenProsthesisSmall</li>
-            <li>InstallWoodenProsthesisMedium</li>
         </value>
     </Operation>
 </Patch>
