@@ -15,6 +15,7 @@
         <defName>StimulantKidneyHediff</defName>
         <label>Caffeine-Pal kidney</label>
         <labelNoun>a Caffeine Pal kidney</labelNoun>
+        <description>Why spend time drinking coffee?</description>
 
         <spawnThingOnRemoved>StimulantKidney</spawnThingOnRemoved>
         <addedPartProps>

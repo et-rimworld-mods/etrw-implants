@@ -15,6 +15,7 @@
         <defName>HediffNoseAnimals</defName>
         <label>Animal-Pal nose</label>
         <labelNoun>an Animal-Pal nose</labelNoun>
+        <description>I am one with the animals.</description>
 
         <spawnThingOnRemoved>NoseAnimals</spawnThingOnRemoved>
         <addedPartProps>
@@ -32,6 +33,20 @@
             </li>
         </stages>
     </HediffDef>
+
+    <ThoughtDef>
+        <defName>ThoughtNoseAnimals</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>HediffNoseAnimals</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Animal-Pal nose</label>
+                <description>I can smell _every_ nearby animal...</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>InstallNoseAnimals</defName>

@@ -15,6 +15,7 @@
         <defName>ToxicLungHediff</defName>
         <label>Tox-O-Mat lung</label>
         <labelNoun>a Tox-O-Mat lung</labelNoun>
+        <description>It's difficult to breathe.</description>
 
         <spawnThingOnRemoved>ToxicLung</spawnThingOnRemoved>
         <addedPartProps>

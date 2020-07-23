@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef Name="SymbioteBase" ParentName="BodyPartBase" Abstract="True">
         <graphicData>
-            <texPath>Things/Item/Health/HealthItemBionic</texPath>
+            <texPath>Things/Item/Health/HealthItem</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.80</drawSize>
         </graphicData>
@@ -34,6 +34,8 @@
     </ThingDef>
 
     <HediffDef Name="SymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
+        <description>I hope this was worth it...</description>
+
         <hediffClass>HediffWithComps</hediffClass>
 
         <!--60 days is one year-->
