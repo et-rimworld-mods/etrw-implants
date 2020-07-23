@@ -48,13 +48,12 @@
         </stages>
     </ThoughtDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallArtificialBodyPartBase">
         <defName>InstallNoseAnimals</defName>
         <label>install Animal-Pal</label>
         <description>Install an Animal-Pal nose.</description>
         <jobString>Installing an Animal-Pal nose.</jobString>
 
-        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>1000</workAmount>
         <skillRequirements>
             <Medicine>3</Medicine>

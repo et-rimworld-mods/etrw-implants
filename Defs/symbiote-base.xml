@@ -48,4 +48,27 @@
             </li>
         </comps>
     </HediffDef>
+
+    <RecipeDef Name="InstallSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
+        <description>"Install" a symbiote.</description>
+        <jobString>"Installing" heart symbiote.</jobString>
+
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <!--
+        This seems to be needed if I put the workerClass in the child def, but if I put the recipeWorker and
+        recipeUsers both in the parent class, the surgeries show up twice in the health-UI...
+
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        -->
+    </RecipeDef>
+
+    <RecipeDef Name="RemoveSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
+        <description>Remove a symbiote.</description>
+        <jobString>Removing symbiote.</jobString>
+        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s symbiote.</successfullyRemovedHediffMessage>
+
+        <workerClass>Recipe_RemoveHediff</workerClass>
+    </RecipeDef>
 </Defs>

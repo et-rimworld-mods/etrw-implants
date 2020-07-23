@@ -32,14 +32,10 @@
         </stages>
     </HediffDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallSymbioteBase">
         <defName>InstallPsychicSymbiote</defName>
         <label>install psychic symbiote</label>
-        <description>Install an psychic symbiote.</description>
-        <jobString>Installing psychic symbiote.</jobString>
 
-        <!--Just stick it in their ear. Ick!-->
-        <workerClass>Recipe_InstallImplant</workerClass>
         <addsHediff>PsychicSymbioteHediff</addsHediff>
         <appliedOnFixedBodyParts>
             <li>Head</li>
@@ -64,14 +60,10 @@
         </fixedIngredientFilter>
     </RecipeDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="RemoveSymbioteBase">
         <defName>RemovePsychicSymbiote</defName>
         <label>remove psychic symbiote</label>
-        <description>Remove a psychic symbiote.</description>
-        <jobString>Removing psychic symbiote.</jobString>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s psychic symbiote.</successfullyRemovedHediffMessage>
 
-        <workerClass>Recipe_RemoveHediff</workerClass>
         <removesHediff>PsychicSymbioteHediff</removesHediff>
         <workAmount>1000</workAmount>
         <surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>

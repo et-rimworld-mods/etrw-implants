@@ -46,13 +46,12 @@
         </stages>
     </HediffDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallArtificialBodyPartBase">
         <defName>InstallShoddyEye</defName>
         <label>install Opto-Mat eye</label>
         <description>Install an Opto-Mat eye.</description>
         <jobString>Installing Opto-Mat eye.</jobString>
 
-        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>3000</workAmount>
         <skillRequirements>
             <Medicine>7</Medicine>

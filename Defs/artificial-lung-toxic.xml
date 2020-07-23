@@ -32,13 +32,12 @@
         </stages>
     </HediffDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallArtificialBodyPartBase">
         <defName>InstallToxicLung</defName>
         <label>install Tox-O-Mat lung</label>
         <description>Install a Tox-O-Mat lung.</description>
         <jobString>Installing a Tox-O-Mat lung.</jobString>
 
-        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>2000</workAmount>
         <skillRequirements>
             <Medicine>6</Medicine>

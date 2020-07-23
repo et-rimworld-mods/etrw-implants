@@ -100,14 +100,10 @@
         </stages>
     </ThoughtDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallSymbioteBase">
         <defName>InstallHeartSymbiote</defName>
         <label>install heart symbiote</label>
-        <description>Install a heart symbiote.</description>
-        <jobString>Installing heart symbiote.</jobString>
 
-        <!--Just stick it down their throat, and make sure they don't choke or try to vomit. Ick!-->
-        <workerClass>Recipe_InstallImplant</workerClass>
         <addsHediff>HeartSymbioteHediff</addsHediff>
         <appliedOnFixedBodyParts>
             <li>Heart</li>
@@ -132,14 +128,10 @@
         </fixedIngredientFilter>
     </RecipeDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="RemoveSymbioteBase">
         <defName>RemoveHeartSymbiote</defName>
         <label>remove heart symbiote</label>
-        <description>Remove a heart symbiote.</description>
-        <jobString>Removing heart symbiote.</jobString>
-        <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s heart symbiote.</successfullyRemovedHediffMessage>
 
-        <workerClass>Recipe_RemoveHediff</workerClass>
         <removesHediff>HeartSymbioteHediff</removesHediff>
         <workAmount>6000</workAmount>
         <surgerySuccessChanceFactor>0.5</surgerySuccessChanceFactor>

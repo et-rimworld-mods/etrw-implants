@@ -36,13 +36,12 @@
         </stages>
     </HediffDef>
 
-    <RecipeDef ParentName="SurgeryFlesh">
+    <RecipeDef ParentName="InstallArtificialBodyPartBase">
         <defName>InstallStimulantKidney</defName>
         <label>install Caffeine-Pal kidney</label>
         <description>Install a Caffeine-Pal kidney.</description>
         <jobString>Installing a Caffeine Pal kidney.</jobString>
 
-        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>2500</workAmount>
         <skillRequirements>
             <Medicine>7</Medicine>
