@@ -13,7 +13,7 @@
 
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>ToxicLungHediff</defName>
-        <label>Tox-O-Mat Lung</label>
+        <label>Tox-O-Mat lung</label>
         <labelNoun>a Tox-O-Mat lung</labelNoun>
 
         <spawnThingOnRemoved>ToxicLung</spawnThingOnRemoved>

@@ -13,7 +13,7 @@
 
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>ShoddyEyeHediff</defName>
-        <label>Opto-Mat Eye</label>
+        <label>Opto-Mat eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>
 
         <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>

@@ -13,7 +13,7 @@
 
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>StimulantKidneyHediff</defName>
-        <label>Caffeine Pal Kidney</label>
+        <label>Caffeine-Pal kidney</label>
         <labelNoun>a Caffeine Pal kidney</labelNoun>
 
         <spawnThingOnRemoved>StimulantKidney</spawnThingOnRemoved>
