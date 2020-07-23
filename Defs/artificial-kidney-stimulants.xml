@@ -37,9 +37,9 @@
 
     <RecipeDef ParentName="SurgeryFlesh">
         <defName>InstallStimulantKidney</defName>
-        <label>install Caffeine Pal</label>
-        <description>Install a Caffeine Pal.</description>
-        <jobString>Installing a Caffeine Pal.</jobString>
+        <label>install Caffeine-Pal kidney</label>
+        <description>Install a Caffeine-Pal kidney.</description>
+        <jobString>Installing a Caffeine Pal kidney.</jobString>
 
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <workAmount>2500</workAmount>
