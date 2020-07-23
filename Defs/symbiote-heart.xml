@@ -11,6 +11,46 @@
         </statBases>
     </ThingDef>
 
+    <!--
+    idea:
+        make "pill" that gives the implant to the specific body-part, so it's self-administerable,
+        for solo-start games.
+    problem:
+        it shows a big annoying letter, as if it were an accident, because that's how most things in the base game work
+    -->
+    <HediffDef>
+        <defName>SwallowedHeartSymbiote</defName>
+        <label>swallowed symbiote</label>
+        <labelNoun>a swallowed symbiote</labelNoun>
+        <description>Hediff should give symbiote...</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.1</severityPerDay>
+<!--                <showHoursToRecover>true</showHoursToRecover>-->
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>HeartSymbioteHediff</hediff>
+                        <mtbDays>0.1</mtbDays>
+                        <partsToAffect>
+                            <li>Heart</li>
+                        </partsToAffect>
+                        <letterType/>
+                        <messageType/>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+
     <HediffDef ParentName="SymbioteHediffBase">
         <defName>HeartSymbioteHediff</defName>
         <label>heart symbiote</label>
