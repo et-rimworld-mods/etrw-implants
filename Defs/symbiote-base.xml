@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Name="SymbioteBase" ParentName="ImplantBase" Abstract="True">
+    <ThingDef Name="SymbioteBase" ParentName="BodyPartBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/Health/HealthItemBionic</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.80</drawSize>
         </graphicData>
 
+        <thingCategories>
+            <li>BodyPartsBionic</li>
+        </thingCategories>
         <!--
         Note: not-a-body-part-replacement hediffs, like implants / my symbiotes, can't spawn things on removal.
         Only body-part-replacement hediffs, like wooden legs and bionic hearts can do that.
@@ -17,19 +20,20 @@
         <spawnThingOnRemoved>SpineSymbiote</spawnThingOnRemoved>
         -->
         <thingSetMakerTags>
-            <li>RewardSpecial</li>
+            <li>RewardStandardHighFreq</li>
         </thingSetMakerTags>
         <tradeTags>
+            <!-- orbital traders, industrial bases, industrial caravans -->
+            <li>TechHediff</li>
             <li>ExoticMisc</li>
         </tradeTags>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Spacer</techLevel> <!-- ?!? -->
         <techHediffsTags>
-            <li>SpacerMilitary</li>
+            <!-- putting tags here allow pawns to spawn with it... -->
         </techHediffsTags>
     </ThingDef>
 
     <HediffDef Name="SymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
-        <isBad>false</isBad>
         <hediffClass>HediffWithComps</hediffClass>
 
         <!--60 days is one year-->
