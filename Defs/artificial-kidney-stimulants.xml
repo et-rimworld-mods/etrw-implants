@@ -6,7 +6,7 @@
         <description>The Caffeine Pal kidney replacement provides a steady supply of stimulants to the user's blood-stream. Despite its name, caffeine is the smallest ingredient, by percentage. All other stimulants are the intellectual property of the Stimu-Mat corporation, protected by applicable galaxy and stellar-system law.</description>
 
         <statBases>
-            <MarketValue>2000</MarketValue>
+            <MarketValue>800</MarketValue>
             <Mass>2</Mass>
         </statBases>
     </ThingDef>
