@@ -2,9 +2,10 @@
 <ModMetaData>
     <name>ET's Implants</name>
     <author>Elia Tarasoff</author>
+    <packageId>EliaTarasoff.Implants</packageId>
     <url>https://github.com/EliaTarasoff/rimworld-implants</url>
     <supportedVersions>
-        <li>1.0</li>
+        <li>1.1</li>
     </supportedVersions>
-    <description>See the README.md file.</description>
+    <description>See the README.md and LICENSE files.</description>
 </ModMetaData>
