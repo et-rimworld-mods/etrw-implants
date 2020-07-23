@@ -76,14 +76,6 @@
                 <count>1</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-            <thingDefs>
-                <li>NoseAnimals</li>
-            </thingDefs>
-        </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
             <li>Nose</li>
         </appliedOnFixedBodyParts>

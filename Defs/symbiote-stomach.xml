@@ -96,11 +96,6 @@
                 <count>1</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>StomachSymbiote</li>
-            </thingDefs>
-        </fixedIngredientFilter>
     </RecipeDef>
 
     <RecipeDef ParentName="RemoveSymbioteBase">

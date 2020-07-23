@@ -60,14 +60,6 @@
                 <count>1</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-            <thingDefs>
-                <li>ToxicLung</li>
-            </thingDefs>
-        </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
             <li>Lung</li>
         </appliedOnFixedBodyParts>

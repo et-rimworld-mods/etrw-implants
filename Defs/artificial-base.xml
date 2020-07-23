@@ -34,5 +34,15 @@
             <li>Human</li>
         </recipeUsers>
         -->
+
+        <!--
+        this is needed so the recipe is disabled when there's no medicine
+        (although the item-count ingredient list is used to hide the recipe altogether...)
+        -->
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
     </RecipeDef>
 </Defs>

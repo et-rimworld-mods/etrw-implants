@@ -64,14 +64,6 @@
                 <count>1</count>
             </li>
         </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-            <thingDefs>
-                <li>StimulantKidney</li>
-            </thingDefs>
-        </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
             <li>Kidney</li>
         </appliedOnFixedBodyParts>

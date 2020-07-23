@@ -51,7 +51,7 @@
 
     <RecipeDef Name="InstallSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
         <description>"Install" a symbiote.</description>
-        <jobString>"Installing" heart symbiote.</jobString>
+        <jobString>"Installing" symbiote.</jobString>
 
         <workerClass>Recipe_InstallImplant</workerClass>
         <!--
