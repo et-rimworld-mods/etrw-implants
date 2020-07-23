@@ -24,20 +24,11 @@
         </addedPartProps>
         <stages>
             <li>
-                <capMods>
-                    <li>
-                        <capacity>HuntingStealth</capacity>
-                        <offset>0.5</offset>
-                    </li>
-                    <li>
-                        <capacity>TrainAnimalChance</capacity>
-                        <offset>0.5</offset>
-                    </li>
-                    <li>
-                        <capacity>AnimalGatherSpeed</capacity>
-                        <offset>0.2</offset>
-                    </li>
-                </capMods>
+                <statOffsets>
+                    <HuntingStealth>0.5</HuntingStealth>
+                    <TrainAnimalChance>0.5</TrainAnimalChance>
+                    <AnimalGatherSpeed>0.2</AnimalGatherSpeed>
+                </statOffsets>
             </li>
         </stages>
     </HediffDef>
