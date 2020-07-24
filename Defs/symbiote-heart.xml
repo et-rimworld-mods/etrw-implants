@@ -11,12 +11,6 @@
         </statBases>
 
         <comps>
-            <!-- make it self-administerable -->
-            <li Class="CompProperties_Usable">
-                <compClass>CompUsableImplant</compClass>
-                <useJob>UseItem</useJob>
-                <useLabel>Swallow symbiote...</useLabel>
-            </li>
             <li Class="CompProperties_UseEffectInstallImplant">
                 <hediffDef>HeartSymbioteHediff</hediffDef>
                 <bodyPart>Heart</bodyPart>

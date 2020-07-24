@@ -12,12 +12,6 @@
 
 
         <comps>
-            <!-- make it self-administerable -->
-            <li Class="CompProperties_Usable">
-                <compClass>CompUsableImplant</compClass>
-                <useJob>UseItem</useJob>
-                <useLabel>Insert fish into ear...</useLabel>
-            </li>
             <li Class="CompProperties_UseEffectInstallImplant">
                 <hediffDef>PsychicSymbioteHediff</hediffDef>
                 <bodyPart>Head</bodyPart>
@@ -49,7 +43,7 @@
 
     <RecipeDef ParentName="InstallSymbioteBase">
         <defName>InstallPsychicSymbiote</defName>
-        <label>install psychic symbiote</label>
+        <label>insert fish</label>
 
         <addsHediff>PsychicSymbioteHediff</addsHediff>
         <appliedOnFixedBodyParts>

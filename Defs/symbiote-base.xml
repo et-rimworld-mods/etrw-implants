@@ -9,6 +9,11 @@
             <li Class="CompProperties_Forbiddable"/>
 
             <!-- make it self-administerable -->
+            <li Class="CompProperties_Usable">
+                <compClass>CompUsableImplant</compClass>
+                <useJob>UseItem</useJob>
+                <useLabel>"Use" symbiote...</useLabel>
+            </li>
             <li Class="CompProperties_UseEffectPlaySound">
                 <soundOnUsed>Pawn_Melee_HumanBite_Hit</soundOnUsed>
             </li>
