@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="EtrwImplantBase" ParentName="BodyPartBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+
+        <thingCategories>
+            <li>BodyPartsBionic</li>
+        </thingCategories>
+        <!--
+        Note: not-a-body-part-replacement hediffs, like body-part implants / my symbiotes, can't spawn things on removal.
+        Only body-part-replacement hediffs, like wooden legs and bionic hearts can do that.
+        See this forum thread: https://ludeon.com/forums/index.php?topic=42444.0
+        Flavor-text- / hand-wave-wise, I'm willing to put up with these being "attached" / "integrated" with the body,
+        and irrecoverable.
+
+        <spawnThingOnRemoved></spawnThingOnRemoved>
+        -->
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <!-- orbital traders, industrial bases, industrial caravans -->
+            <li>TechHediff</li>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <techLevel>Spacer</techLevel> <!-- ?!? -->
+        <techHediffsTags>
+            <!-- putting tags here allow pawns to spawn with it... -->
+        </techHediffsTags>
+    </ThingDef>
+</Defs>

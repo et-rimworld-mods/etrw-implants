@@ -15,7 +15,7 @@
         <defName>ShoddyEyeHediff</defName>
         <label>Opto-Mat eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>
-        <description>The GUI really helps me do things more effectively! But it's not well made...</description>
+        <description>The HUD really helps me do things more effectively! But it's not well made...</description>
 
         <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
         <addedPartProps>
