@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Name="BodyPartArtificialNoCraftBase" ParentName="BodyPartBase" Abstract="True">
+    <ThingDef Name="BodyPartArtificialNoCraftBase" ParentName="EtrwImplantBase" Abstract="True">
         <graphicData>
-            <texPath>Things/Item/Health/HealthItem</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.80</drawSize>
+            <color>(160, 200, 40)</color>
         </graphicData>
-
-        <thingCategories>
-            <li>BodyPartsBionic</li>
-        </thingCategories>
-        <thingSetMakerTags>
-            <li>RewardStandardHighFreq</li>
-        </thingSetMakerTags>
-        <tradeTags>
-            <!-- orbital traders, industrial bases, industrial caravans -->
-            <li>TechHediff</li>
-            <li>ExoticMisc</li>
-        </tradeTags>
-        <techLevel>Spacer</techLevel> <!-- ?!? -->
-        <techHediffsTags>
-            <!-- putting tags here allow pawns to spawn with it... -->
-        </techHediffsTags>
     </ThingDef>
 
     <RecipeDef Name="InstallArtificialBodyPartBase" ParentName="SurgeryFlesh" Abstract="True">

@@ -9,6 +9,14 @@
             <MarketValue>2200</MarketValue>
             <Mass>0.1</Mass>
         </statBases>
+
+        <comps>
+            <li Class="CompProperties_UseEffectInstallImplant">
+                <hediffDef>PsychicSymbioteHediff</hediffDef>
+                <bodyPart>Head</bodyPart>
+                <canUpgrade>false</canUpgrade>
+            </li>
+        </comps>
     </ThingDef>
 
     <HediffDef ParentName="SymbioteHediffBase">

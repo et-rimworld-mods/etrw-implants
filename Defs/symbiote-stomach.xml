@@ -9,6 +9,13 @@
             <MarketValue>300</MarketValue>
             <Mass>0.2</Mass>
         </statBases>
+        <comps>
+            <li Class="CompProperties_UseEffectInstallImplant">
+                <hediffDef>StomachSymbioteHediff</hediffDef>
+                <bodyPart>Stomach</bodyPart>
+                <canUpgrade>false</canUpgrade>
+            </li>
+        </comps>
     </ThingDef>
 
     <HediffDef ParentName="SymbioteHediffBase">
