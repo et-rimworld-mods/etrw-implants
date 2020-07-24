@@ -42,9 +42,6 @@
                         <offset>-0.1</offset>
                     </li>
                 </capMods>
-                <statOffsets>
-                    <HungerRateMultiplier>-0.2</HungerRateMultiplier>
-                </statOffsets>
             </li>
 
             <li>
@@ -68,8 +65,10 @@
                 <!--fully integrated-->
 
                 <minSeverity>6</minSeverity>
-                <hungerRateFactorOffset>0.4</hungerRateFactorOffset>
                 <painFactor>0.9</painFactor>
+                <statOffsets>
+                    <HungerRateMultiplier>0.2</HungerRateMultiplier>
+                </statOffsets>
                 <capMods>
                     <li>
                         <capacity>BloodPumping</capacity>
