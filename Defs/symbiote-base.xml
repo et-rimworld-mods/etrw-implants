@@ -8,7 +8,10 @@
         <comps>
             <li Class="CompProperties_Forbiddable"/>
 
-            <!-- make it self-administerable -->
+            <!--
+            make it self-administerable
+            (this only works for "implants" not body-part replacement hediffs)
+            -->
             <li Class="CompProperties_Usable">
                 <compClass>CompUsableImplant</compClass>
                 <useJob>UseItem</useJob>
