@@ -6,7 +6,7 @@
         <description>The Tox-O-Mat artificial lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, useful for slave-operated cleanup crews.</description>
 
         <statBases>
-            <MarketValue>350</MarketValue>  <!--biological lung is 400, and better function (although not toxic-immune)-->
+            <MarketValue>350</MarketValue>  <!-- biological lung is 400, and better function (although not toxic-immune) -->
             <Mass>3.0</Mass>
         </statBases>
     </ThingDef>
@@ -26,7 +26,7 @@
         <stages>
             <li>
                 <statOffsets>
-                    <ToxicSensitivity>-0.4</ToxicSensitivity>
+                    <ToxicSensitivity>-0.9</ToxicSensitivity>
                 </statOffsets>
             </li>
         </stages>
