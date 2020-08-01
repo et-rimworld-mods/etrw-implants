@@ -9,7 +9,7 @@
         </descriptionHyperlinks>
 
         <statBases>
-            <MarketValue>1000</MarketValue>
+            <MarketValue>1600</MarketValue>
             <Mass>1.0</Mass>
         </statBases>
     </ThingDef>
@@ -37,15 +37,15 @@
                 <mentalStateGivers>
                     <li>
                         <mentalState>WanderConfused</mentalState>
-                        <mtbDays>20</mtbDays>
-                    </li>
-                    <li>
-                        <mentalState>Wander_Psychotic</mentalState>
                         <mtbDays>30</mtbDays>
                     </li>
                     <li>
-                        <mentalState>Berserk</mentalState>
+                        <mentalState>Wander_Psychotic</mentalState>
                         <mtbDays>60</mtbDays>
+                    </li>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>120</mtbDays>
                     </li>
                 </mentalStateGivers>
             </li>
