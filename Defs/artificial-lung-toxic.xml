@@ -4,6 +4,9 @@
         <defName>ToxicLung</defName>
         <label>Tox-O-Mat lung</label>
         <description>The Tox-O-Mat artificial lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, useful for slave-operated cleanup crews.</description>
+        <descriptionHyperlinks>
+            <HediffDef>ToxicLungHediff</HediffDef>
+        </descriptionHyperlinks>
 
         <statBases>
             <MarketValue>350</MarketValue>  <!-- biological lung is 400, and better function (although not toxic-immune) -->
@@ -16,6 +19,9 @@
         <label>Tox-O-Mat lung</label>
         <labelNoun>a Tox-O-Mat lung</labelNoun>
         <description>It's difficult to breathe.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ToxicLung</ThingDef>
+        </descriptionHyperlinks>
 
         <spawnThingOnRemoved>ToxicLung</spawnThingOnRemoved>
         <addedPartProps>

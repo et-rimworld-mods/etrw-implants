@@ -4,6 +4,9 @@
         <defName>StimulantKidney</defName>
         <label>Caffeine-Pal kidney</label>
         <description>The Caffeine-Pal kidney replacement provides a steady supply of stimulants to the user's blood-stream. Despite its name, caffeine is the smallest ingredient, by percentage. All other stimulants are the intellectual property of the Stimu-Mat corporation, protected by applicable galaxy and stellar-system law.</description>
+        <descriptionHyperlinks>
+            <HediffDef>StimulantKidneyHediff</HediffDef>
+        </descriptionHyperlinks>
 
         <statBases>
             <MarketValue>800</MarketValue>
@@ -16,6 +19,9 @@
         <label>Caffeine-Pal kidney</label>
         <labelNoun>a Caffeine Pal kidney</labelNoun>
         <description>Why spend time drinking coffee?</description>
+        <descriptionHyperlinks>
+            <ThingDef>StimulantKidney</ThingDef>
+        </descriptionHyperlinks>
 
         <spawnThingOnRemoved>StimulantKidney</spawnThingOnRemoved>
         <addedPartProps>

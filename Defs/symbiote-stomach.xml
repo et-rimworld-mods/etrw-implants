@@ -4,6 +4,9 @@
         <defName>StomachSymbiote</defName>
         <label>stomach symbiote</label>
         <description>The stomach symbiote was designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.\n\nLike most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
+        <descriptionHyperlinks>
+            <HediffDef>StomachSymbioteHediff</HediffDef>
+        </descriptionHyperlinks>
 
         <statBases>
             <MarketValue>300</MarketValue>
@@ -22,6 +25,9 @@
         <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
+        <descriptionHyperlinks>
+            <ThingDef>StomachSymbiote</ThingDef>
+        </descriptionHyperlinks>
 
         <stages>
             <li>

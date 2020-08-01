@@ -4,6 +4,9 @@
         <defName>NoseAnimals</defName>
         <label>Ani-Pal nose</label>
         <description>The Ani-Pal nose replacement allows humans to detect airborne chemicals as well as most other animals. The practical upshot is that hunters may more easily sneak up on prey, and handlers have an easier time caring for their charges.</description>
+        <descriptionHyperlinks>
+            <HediffDef>HediffNoseAnimals</HediffDef>
+        </descriptionHyperlinks>
 
         <statBases>
             <MarketValue>1500</MarketValue>
@@ -16,6 +19,9 @@
         <label>Ani-Pal nose</label>
         <labelNoun>an Ani-Pal nose</labelNoun>
         <description>I am one with the animals.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NoseAnimals</ThingDef>
+        </descriptionHyperlinks>
 
         <spawnThingOnRemoved>NoseAnimals</spawnThingOnRemoved>
         <addedPartProps>

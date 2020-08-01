@@ -4,6 +4,9 @@
         <defName>ShoddyEye</defName>
         <label>Opto-Mat eye</label>
         <description>The Opto-Mat artificial eye was designed to improve worker function on factory planets. Its micro-database and sub-persona AI highlight important objects, and offer advice on recommended procedures. Its shoddy build quality and cheap electronics however, sometimes cause the wearer to experience vivid hallucinations. On average, the lost time is more than made up for by the increased worker output, so they have not been changed.</description>
+        <descriptionHyperlinks>
+            <HediffDef>ShoddyEyeHediff</HediffDef>
+        </descriptionHyperlinks>
 
         <statBases>
             <MarketValue>500</MarketValue>
@@ -16,6 +19,9 @@
         <label>Opto-Mat eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>
         <description>The HUD really helps me do things more effectively! But it's not well made...</description>
+        <descriptionHyperlinks>
+            <ThingDef>ShoddyEye</ThingDef>
+        </descriptionHyperlinks>
 
         <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
         <addedPartProps>
