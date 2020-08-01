@@ -11,7 +11,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
         <defName>ShoddyEyeHediff</defName>
         <label>Opto-Mat eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>

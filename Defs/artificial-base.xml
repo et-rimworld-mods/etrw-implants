@@ -6,6 +6,10 @@
         </graphicData>
     </ThingDef>
 
+    <HediffDef Name="BodyPartArtificialNoCraftHediffBase" ParentName="AddedBodyPartBase" Abstract="True">
+        <defaultLabelColor>(160, 200, 40)</defaultLabelColor>
+    </HediffDef>
+
     <RecipeDef Name="InstallArtificialBodyPartBase" ParentName="SurgeryFlesh" Abstract="True">
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
         <recipeUsers>

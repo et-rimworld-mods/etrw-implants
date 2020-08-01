@@ -29,6 +29,8 @@
     <HediffDef Name="SymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
         <description>I hope this was worth it...</description>
 
+        <defaultLabelColor>(180, 200, 125)</defaultLabelColor>
+
         <hediffClass>HediffWithComps</hediffClass>
 
         <!--60 days is one year-->

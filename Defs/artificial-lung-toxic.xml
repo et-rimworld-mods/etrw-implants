@@ -11,7 +11,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
         <defName>ToxicLungHediff</defName>
         <label>Tox-O-Mat lung</label>
         <labelNoun>a Tox-O-Mat lung</labelNoun>

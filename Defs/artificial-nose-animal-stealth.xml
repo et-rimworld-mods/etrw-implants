@@ -11,7 +11,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
         <defName>HediffNoseAnimals</defName>
         <label>Ani-Pal nose</label>
         <labelNoun>an Ani-Pal nose</labelNoun>

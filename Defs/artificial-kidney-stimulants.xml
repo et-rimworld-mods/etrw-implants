@@ -11,7 +11,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="AddedBodyPartBase">
+    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
         <defName>StimulantKidneyHediff</defName>
         <label>Caffeine-Pal kidney</label>
         <labelNoun>a Caffeine Pal kidney</labelNoun>
