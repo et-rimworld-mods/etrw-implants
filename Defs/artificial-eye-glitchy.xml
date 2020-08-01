@@ -9,7 +9,7 @@
         </descriptionHyperlinks>
 
         <statBases>
-            <MarketValue>500</MarketValue>
+            <MarketValue>1000</MarketValue>
             <Mass>1.0</Mass>
         </statBases>
     </ThingDef>
@@ -27,7 +27,7 @@
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>1.1</partEfficiency>
-            <betterThanNatural>false</betterThanNatural>
+            <betterThanNatural>true</betterThanNatural>
         </addedPartProps>
         <stages>
             <li>
@@ -37,7 +37,7 @@
                 <mentalStateGivers>
                     <li>
                         <mentalState>WanderConfused</mentalState>
-                        <mtbDays>15</mtbDays>
+                        <mtbDays>20</mtbDays>
                     </li>
                     <li>
                         <mentalState>Wander_Psychotic</mentalState>
@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <mentalState>Berserk</mentalState>
-                        <mtbDays>40</mtbDays>
+                        <mtbDays>60</mtbDays>
                     </li>
                 </mentalStateGivers>
             </li>
