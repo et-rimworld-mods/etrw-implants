@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="BodyPartArtificialNoCraftBase">
         <defName>NoseAnimals</defName>
-        <label>Animal-Pal nose</label>
-        <description>The Animal-Pal nose allows humans to detect airborne chemicals as well as most other animals. The practical upshot of this is that hunters may more easily sneak up on animals, and handlers have an easier time with animals.</description>
+        <label>Ani-Pal nose</label>
+        <description>The Ani-Pal nose replacement allows humans to detect airborne chemicals as well as most other animals. The practical upshot is that hunters may more easily sneak up on prey, and handlers have an easier time caring for their charges.</description>
 
         <statBases>
             <MarketValue>1500</MarketValue>
@@ -13,8 +13,8 @@
 
     <HediffDef ParentName="AddedBodyPartBase">
         <defName>HediffNoseAnimals</defName>
-        <label>Animal-Pal nose</label>
-        <labelNoun>an Animal-Pal nose</labelNoun>
+        <label>Ani-Pal nose</label>
+        <labelNoun>an Ani-Pal nose</labelNoun>
         <description>I am one with the animals.</description>
 
         <spawnThingOnRemoved>NoseAnimals</spawnThingOnRemoved>
@@ -41,7 +41,7 @@
         <validWhileDespawned>true</validWhileDespawned>
         <stages>
             <li>
-                <label>Animal-Pal nose</label>
+                <label>Ani-Pal nose</label>
                 <description>I can smell _every_ nearby animal...</description>
                 <baseMoodEffect>-2</baseMoodEffect>
             </li>
@@ -50,9 +50,9 @@
 
     <RecipeDef ParentName="InstallArtificialBodyPartBase">
         <defName>InstallNoseAnimals</defName>
-        <label>install Animal-Pal</label>
-        <description>Install an Animal-Pal nose.</description>
-        <jobString>Installing an Animal-Pal nose.</jobString>
+        <label>install Ani-Pal</label>
+        <description>Install an Ani-Pal nose.</description>
+        <jobString>Installing an Ani-Pal nose.</jobString>
 
         <workAmount>1000</workAmount>
         <skillRequirements>
