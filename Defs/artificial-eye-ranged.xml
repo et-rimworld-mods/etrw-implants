@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="EtrwBodyPartBase">
-        <defName>ShoddyEye</defName>
-        <label>Opto-Mat eye</label>
-        <description>The Opto-Mat artificial eye was designed to improve worker function on factory planets. Its micro-database and sub-persona AI highlight important objects, and offer advice on recommended procedures. Its shoddy build quality and cheap electronics however, sometimes cause the wearer to experience vivid hallucinations. On average, the lost time is more than made up for by the increased worker output, so they have not been changed.</description>
+        <defName>EtrwBodyPartEyeRanged</defName>
+        <label>Dead-Eye</label>
+        <description>Dead-eyes are bionic eye-replacements focused on ranged combat. Before the trademark expired, different businesses, mafias, and cartels were all already constructing cheap knockoffs, for use in their security guards. Between the different sources, transportation mishaps, and corner-cutting, you're guaranteed to have some glitches, causing psychotic hallucinations...</description>
         <descriptionHyperlinks>
-            <HediffDef>ShoddyEyeHediff</HediffDef>
+            <HediffDef>EtrwBodyPartEyeRangedHediff</HediffDef>
         </descriptionHyperlinks>
 
         <statBases>
-            <MarketValue>1600</MarketValue>
+            <MarketValue>2000</MarketValue>
             <Mass>1.0</Mass>
         </statBases>
     </ThingDef>
 
     <HediffDef ParentName="EtrwBodyPartHediffBase">
-        <defName>ShoddyEyeHediff</defName>
-        <label>Opto-Mat eye</label>
-        <labelNoun>an Opto-Mat eye</labelNoun>
-        <description>The HUD really helps me do things more effectively! But it's not well made...</description>
+        <defName>EtrwBodyPartEyeRangedHediff</defName>
+        <label>Dead-Eye</label>
+        <labelNoun>a Dead-Eye</labelNoun>
+        <description>The HUD predicts target range and movement! But it's not well made...</description>
         <descriptionHyperlinks>
-            <ThingDef>ShoddyEye</ThingDef>
+            <ThingDef>EtrwBodyPartEyeRanged</ThingDef>
         </descriptionHyperlinks>
 
-        <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
+        <spawnThingOnRemoved>EtrwBodyPartEyeRanged</spawnThingOnRemoved>
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>1.1</partEfficiency>
@@ -32,19 +32,20 @@
         <stages>
             <li>
                 <statOffsets>
-                    <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+                    <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.1</AimingDelayFactor>
                 </statOffsets>
                 <mentalStateGivers>
                     <li>
-                        <mentalState>WanderConfused</mentalState>
+                        <mentalState>Wander_Psychotic_Short</mentalState>
                         <mtbDays>30</mtbDays>
                     </li>
                     <li>
-                        <mentalState>Wander_Psychotic_Short</mentalState>
+                        <mentalState>Wander_Psychotic</mentalState>
                         <mtbDays>60</mtbDays>
                     </li>
                     <li>
-                        <mentalState>Wander_Psychotic</mentalState>
+                        <mentalState>Berserk</mentalState>
                         <mtbDays>120</mtbDays>
                     </li>
                 </mentalStateGivers>
@@ -53,10 +54,10 @@
     </HediffDef>
 
     <RecipeDef ParentName="InstallArtificialBodyPartBase">
-        <defName>InstallShoddyEye</defName>
-        <label>install Opto-Mat eye</label>
-        <description>Install an Opto-Mat eye.</description>
-        <jobString>Installing Opto-Mat eye.</jobString>
+        <defName>InstallEtrwBodyPartEyeRanged</defName>
+        <label>install Dead-Eye</label>
+        <description>Install a Dead-Eye.</description>
+        <jobString>Installing Dead-Eye.</jobString>
 
         <workAmount>3000</workAmount>
         <skillRequirements>
@@ -74,7 +75,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ShoddyEye</li>
+                        <li>EtrwBodyPartEyeRanged</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -83,6 +84,6 @@
         <appliedOnFixedBodyParts>
             <li>Eye</li>
         </appliedOnFixedBodyParts>
-        <addsHediff>ShoddyEyeHediff</addsHediff>
+        <addsHediff>EtrwBodyPartEyeRangedHediff</addsHediff>
     </RecipeDef>
 </Defs>

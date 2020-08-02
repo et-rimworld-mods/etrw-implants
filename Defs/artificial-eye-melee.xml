@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="EtrwBodyPartBase">
-        <defName>ShoddyEye</defName>
-        <label>Opto-Mat eye</label>
-        <description>The Opto-Mat artificial eye was designed to improve worker function on factory planets. Its micro-database and sub-persona AI highlight important objects, and offer advice on recommended procedures. Its shoddy build quality and cheap electronics however, sometimes cause the wearer to experience vivid hallucinations. On average, the lost time is more than made up for by the increased worker output, so they have not been changed.</description>
+        <defName>EtrwBodyPartEyeMelee</defName>
+        <label>Duelist's Dream</label>
+        <description>The Duelist's Dream eye-replacement highlights weaknesses in the opponent, and predicts likely attacks.</description>
         <descriptionHyperlinks>
-            <HediffDef>ShoddyEyeHediff</HediffDef>
+            <HediffDef>EtrwBodyPartEyeMeleeHediff</HediffDef>
         </descriptionHyperlinks>
 
         <statBases>
-            <MarketValue>1600</MarketValue>
+            <MarketValue>2000</MarketValue>
             <Mass>1.0</Mass>
         </statBases>
     </ThingDef>
 
     <HediffDef ParentName="EtrwBodyPartHediffBase">
-        <defName>ShoddyEyeHediff</defName>
-        <label>Opto-Mat eye</label>
-        <labelNoun>an Opto-Mat eye</labelNoun>
-        <description>The HUD really helps me do things more effectively! But it's not well made...</description>
+        <defName>EtrwBodyPartEyeMeleeHediff</defName>
+        <label>Duelist's Dream</label>
+        <labelNoun>a Duelist's Dream</labelNoun>
+        <description>The HUD helps me out-wit my opponent! But it's not well made...</description>
         <descriptionHyperlinks>
-            <ThingDef>ShoddyEye</ThingDef>
+            <ThingDef>EtrwBodyPartEyeMelee</ThingDef>
         </descriptionHyperlinks>
 
-        <spawnThingOnRemoved>ShoddyEye</spawnThingOnRemoved>
+        <spawnThingOnRemoved>EtrwBodyPartEyeMelee</spawnThingOnRemoved>
         <addedPartProps>
             <solid>true</solid>
             <partEfficiency>1.1</partEfficiency>
@@ -32,19 +32,21 @@
         <stages>
             <li>
                 <statOffsets>
-                    <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+                    <MeleeArmorPenetration>0.05</MeleeArmorPenetration>
+                    <MeleeHitChance>0.1</MeleeHitChance>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
                 </statOffsets>
                 <mentalStateGivers>
                     <li>
-                        <mentalState>WanderConfused</mentalState>
+                        <mentalState>Wander_Psychotic_Short</mentalState>
                         <mtbDays>30</mtbDays>
                     </li>
                     <li>
-                        <mentalState>Wander_Psychotic_Short</mentalState>
+                        <mentalState>Wander_Psychotic</mentalState>
                         <mtbDays>60</mtbDays>
                     </li>
                     <li>
-                        <mentalState>Wander_Psychotic</mentalState>
+                        <mentalState>Berserk</mentalState>
                         <mtbDays>120</mtbDays>
                     </li>
                 </mentalStateGivers>
@@ -53,10 +55,10 @@
     </HediffDef>
 
     <RecipeDef ParentName="InstallArtificialBodyPartBase">
-        <defName>InstallShoddyEye</defName>
-        <label>install Opto-Mat eye</label>
-        <description>Install an Opto-Mat eye.</description>
-        <jobString>Installing Opto-Mat eye.</jobString>
+        <defName>InstallEtrwBodyPartEyeMelee</defName>
+        <label>install Duelist's Dream</label>
+        <description>Install a Duelist's Dream.</description>
+        <jobString>Installing Duelist's Dream.</jobString>
 
         <workAmount>3000</workAmount>
         <skillRequirements>
@@ -74,7 +76,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>ShoddyEye</li>
+                        <li>EtrwBodyPartEyeMelee</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -83,6 +85,6 @@
         <appliedOnFixedBodyParts>
             <li>Eye</li>
         </appliedOnFixedBodyParts>
-        <addsHediff>ShoddyEyeHediff</addsHediff>
+        <addsHediff>EtrwBodyPartEyeMeleeHediff</addsHediff>
     </RecipeDef>
 </Defs>
