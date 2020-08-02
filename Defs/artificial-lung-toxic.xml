@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
+    <ThingDef ParentName="EtrwBodyPartBase">
         <defName>ToxicLung</defName>
         <label>Tox-O-Mat lung</label>
         <description>The Tox-O-Mat artificial lung was designed to filter out airborne toxins. Its cheap design made it mass-producible, useful for slave-operated cleanup crews.</description>
@@ -14,7 +14,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
+    <HediffDef ParentName="EtrwBodyPartHediffBase">
         <defName>ToxicLungHediff</defName>
         <label>Tox-O-Mat lung</label>
         <labelNoun>a Tox-O-Mat lung</labelNoun>

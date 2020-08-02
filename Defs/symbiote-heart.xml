@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="SymbioteBase">
+    <ThingDef ParentName="EtrwSymbioteBase">
         <defName>HeartSymbiote</defName>
         <label>heart symbiote</label>
         <description>An advanced, genetically-engineered symbiote, designed for the military. Useful for its increased soldier function, it also causes increased hunger and negatively affects the soldier's mood.\n\nLike most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
@@ -22,7 +22,7 @@
         </comps>
     </ThingDef>
 
-    <HediffDef ParentName="SymbioteHediffBase">
+    <HediffDef ParentName="EtrwSymbioteHediffBase">
         <defName>HeartSymbioteHediff</defName>
         <label>heart symbiote</label>
         <labelNoun>a heart symbiote</labelNoun>
@@ -113,7 +113,7 @@
         </stages>
     </ThoughtDef>
 
-    <RecipeDef ParentName="InstallSymbioteBase">
+    <RecipeDef ParentName="EtrwInstallSymbioteBase">
         <defName>InstallHeartSymbiote</defName>
         <label>install heart symbiote</label>
 
@@ -136,7 +136,7 @@
         </ingredients>
     </RecipeDef>
 
-    <RecipeDef ParentName="RemoveSymbioteBase">
+    <RecipeDef ParentName="EtrwRemoveSymbioteBase">
         <defName>RemoveHeartSymbiote</defName>
         <label>remove heart symbiote</label>
 

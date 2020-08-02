@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Name="SymbioteBase" ParentName="EtrwImplantBase" Abstract="True">
+    <ThingDef Name="EtrwSymbioteBase" ParentName="EtrwImplantBase" Abstract="True">
         <graphicData>
             <color>(180, 200, 125)</color>
         </graphicData>
@@ -26,7 +26,7 @@
         </comps>
     </ThingDef>
 
-    <HediffDef Name="SymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
+    <HediffDef Name="EtrwSymbioteHediffBase" ParentName="ImplantHediffBase" Abstract="True">
         <description>I hope this was worth it...</description>
 
         <defaultLabelColor>(180, 200, 125)</defaultLabelColor>
@@ -44,7 +44,7 @@
         </comps>
     </HediffDef>
 
-    <RecipeDef Name="InstallSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
+    <RecipeDef Name="EtrwInstallSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
         <description>"Install" a symbiote.</description>
         <jobString>"Installing" symbiote.</jobString>
 
@@ -54,7 +54,7 @@
         </recipeUsers>
     </RecipeDef>
 
-    <RecipeDef Name="RemoveSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
+    <RecipeDef Name="EtrwRemoveSymbioteBase" ParentName="SurgeryFlesh" Abstract="True">
         <description>Remove a symbiote.</description>
         <jobString>Removing symbiote.</jobString>
         <successfullyRemovedHediffMessage>{0} has successfully removed {1}'s symbiote.</successfullyRemovedHediffMessage>

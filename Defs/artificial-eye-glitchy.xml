@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
+    <ThingDef ParentName="EtrwBodyPartBase">
         <defName>ShoddyEye</defName>
         <label>Opto-Mat eye</label>
         <description>The Opto-Mat artificial eye was designed to improve worker function on factory planets. Its micro-database and sub-persona AI highlight important objects, and offer advice on recommended procedures. Its shoddy build quality and cheap electronics however, sometimes cause the wearer to experience vivid hallucinations. On average, the lost time is more than made up for by the increased worker output, so they have not been changed.</description>
@@ -14,7 +14,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
+    <HediffDef ParentName="EtrwBodyPartHediffBase">
         <defName>ShoddyEyeHediff</defName>
         <label>Opto-Mat eye</label>
         <labelNoun>an Opto-Mat eye</labelNoun>

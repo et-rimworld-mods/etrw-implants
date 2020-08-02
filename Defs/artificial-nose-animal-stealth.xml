@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BodyPartArtificialNoCraftBase">
+    <ThingDef ParentName="EtrwBodyPartBase">
         <defName>NoseAnimals</defName>
         <label>Ani-Pal nose</label>
         <description>The Ani-Pal nose replacement allows humans to detect airborne chemicals as well as most other animals. The practical upshot is that hunters may more easily sneak up on prey, and handlers have an easier time caring for their charges.</description>
@@ -14,7 +14,7 @@
         </statBases>
     </ThingDef>
 
-    <HediffDef ParentName="BodyPartArtificialNoCraftHediffBase">
+    <HediffDef ParentName="EtrwBodyPartHediffBase">
         <defName>HediffNoseAnimals</defName>
         <label>Ani-Pal nose</label>
         <labelNoun>an Ani-Pal nose</labelNoun>

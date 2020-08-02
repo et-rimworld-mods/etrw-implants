@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Name="BodyPartArtificialNoCraftBase" ParentName="EtrwImplantBase" Abstract="True">
+    <ThingDef Name="EtrwBodyPartBase" ParentName="EtrwImplantBase" Abstract="True">
         <graphicData>
             <color>(160, 200, 40)</color>
         </graphicData>
     </ThingDef>
 
-    <HediffDef Name="BodyPartArtificialNoCraftHediffBase" ParentName="AddedBodyPartBase" Abstract="True">
+    <HediffDef Name="EtrwBodyPartHediffBase" ParentName="AddedBodyPartBase" Abstract="True">
         <defaultLabelColor>(160, 200, 40)</defaultLabelColor>
     </HediffDef>
 

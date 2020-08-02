@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="SymbioteBase">
+    <ThingDef ParentName="EtrwSymbioteBase">
         <defName>StomachSymbiote</defName>
         <label>stomach symbiote</label>
         <description>The stomach symbiote was designed to keep people alive on less, low-quality food. Invented for the military as an alternative to survival-rations, they were abandoned when the negative effects became known. They are now used mostly by slaving colonies.\n\nLike most symbiotes, its "installation" generally consists of anesthetizing the patient, and inserting it into the designated orifice. Side-effects may include nausea and pain while the symbiote integrates with the patient's body.</description>
@@ -21,7 +21,7 @@
         </comps>
     </ThingDef>
 
-    <HediffDef ParentName="SymbioteHediffBase">
+    <HediffDef ParentName="EtrwSymbioteHediffBase">
         <defName>StomachSymbioteHediff</defName>
         <label>stomach symbiote</label>
         <labelNoun>a stomach symbiote</labelNoun>
@@ -88,7 +88,7 @@
         </stages>
     </ThoughtDef>
 
-    <RecipeDef ParentName="InstallSymbioteBase">
+    <RecipeDef ParentName="EtrwInstallSymbioteBase">
         <defName>InstallStomachSymbiote</defName>
         <label>install stomach symbiote</label>
 
@@ -111,7 +111,7 @@
         </ingredients>
     </RecipeDef>
 
-    <RecipeDef ParentName="RemoveSymbioteBase">
+    <RecipeDef ParentName="EtrwRemoveSymbioteBase">
         <defName>RemoveStomachSymbiote</defName>
         <label>remove stomach symbiote</label>
 
