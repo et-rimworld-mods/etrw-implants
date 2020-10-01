@@ -33,7 +33,8 @@
             <li>
                 <statOffsets>
                     <HuntingStealth>0.5</HuntingStealth>
-                    <TrainAnimalChance>0.5</TrainAnimalChance>
+                    <TameAnimalChance>0.5</TameAnimalChance>
+                    <TrainAnimalChance>0.4</TrainAnimalChance>
                     <AnimalGatherSpeed>0.2</AnimalGatherSpeed>
                 </statOffsets>
             </li>
